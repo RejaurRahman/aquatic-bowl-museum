@@ -1,19 +1,13 @@
 <template>
   <div>
-    <h1>This is about us page</h1>
+    <h1>This is footer page</h1>
   </div>
 </template>
 
 <script>
   export default {
-    name: "About",
-    data() {
-      return {
-
-      }
-    }
-  };
-</script>
+    name: "Footer"
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -1,29 +1,33 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Results Page</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <Header></Header>
     <router-view/>
+    <Footer></Footer>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+  import 'bulma/css/bulma.min.css';
+  import Header from "./views/Header.vue"
+  import Footer from "./views/Footer.vue"
+
+  export default {
+    name: 'app',
+
+    components: {
+      Header,
+      Footer
     }
   }
-}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss">
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
 </style>
