@@ -50,9 +50,9 @@
     		.home-banner {
     			background: url("../assets/images/home-banner.jpg");
     			background-size: cover;
-    			background-position: center center;
+    			background-position: top -221px center;
     			background-repeat: no-repeat;
-    			width: 100%;
+    			width: 100vw;
     			height: 100%;
     		}		
 			}

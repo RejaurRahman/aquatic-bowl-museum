@@ -12,6 +12,7 @@
         </div>
       </div>
       <div class="navbar-menu menu-section" :class="{ 'is-active': showNav }">
+        <div class="background-menu-layer"></div>
         <div class="navbar-start">
           <router-link class="navbar-item page1" to="/">home</router-link>
           <router-link class="navbar-item page2" to="/about">about aquatic bowl life</router-link>
@@ -42,6 +43,32 @@
         siteHtml.classList.toggle('hide-scrollbar');
         overlay.classList.toggle('display-overlay')
       }
+    },
+
+    watch: {
+      '$route'(to) {
+        if (to.name == 'home') {
+          var navbar = document.querySelector('nav.navbar');
+          navbar.classList.add('homeNavbar');
+          navbar.classList.remove('notHomeNavbar');
+        } else if (to.name !== 'home') {
+          var navbar = document.querySelector('nav.navbar');
+          navbar.classList.add('notHomeNavbar');
+          navbar.classList.remove('homeNavbar');
+        }
+      }
+    },
+
+    mounted() {
+      if (this.$route.name == 'home') {
+        var navbar = document.querySelector('nav.navbar');
+        navbar.classList.add('homeNavbar');
+        navbar.classList.remove('notHomeNavbar');
+      } else if (this.$route.name != 'home') {
+        var navbar = document.querySelector('nav.navbar');
+        navbar.classList.add('notHomeNavbar');
+        navbar.classList.remove('homeNavbar');
+      }
     }
   }
 </script>
@@ -54,6 +81,20 @@
     position: absolute;
     top: 0px;
     z-index: 3;
+    &.notHomeNavbar {
+      background: #38d6d3;
+      .background-menu-layer {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100%;
+        background: url("../assets/images/home-banner.jpg");
+        background-size: cover;
+        background-position: top -220px center;
+        background-repeat: no-repeat;
+      }
+    }
     @media (max-width: 1085px) {
       position: fixed;
     }
@@ -123,6 +164,7 @@
         }
       }
       .navbar-menu {
+        position: relative;
         @media (min-width: 1086px) {
           display: flex;
           background: transparent;
