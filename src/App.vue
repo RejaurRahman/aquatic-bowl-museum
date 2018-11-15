@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <router-view/>
+    <Header class="headerSection"></Header>
+    <router-view />
     <Footer></Footer>
+    <a @click="BackToTop()" class="backToTop">
+      <img src="./assets/images/back-to-top.png">
+      <span>scroll to top</span>
+    </a>
     <div class="navbar-overlay"></div>
   </div>
 </template>
@@ -19,6 +23,30 @@
     components: {
       Header,
       Footer
+    },
+
+    mounted() {
+      window.onscroll = function() {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.querySelector('.backToTop').style.display = "block";
+          document.querySelector('.backToTop').style.animation = "showScrollTopBtn 2s 1";
+        } else {
+          document.querySelector('.backToTop').style.display = "none";
+          document.querySelector('.backToTop').style.animation = "hideScrollTopBtn 2s 1";
+        }
+      }
+    },
+
+    methods: {
+      BackToTop() {
+        document.querySelector('.headerSection').scrollIntoView({
+          behavior: 'smooth'
+        });
+      },
     }
   }
 </script>
@@ -31,6 +59,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+
     .navbar-overlay {
       background: #000;
       z-index: 2;
@@ -38,15 +67,71 @@
       width: 100%;
       display: block;
       top: 0px;
-      opacity: 0;
+      opacity: 0px;
       &.display-overlay {
         opacity: 0.75;
         position: fixed;
-      }        
+      }
+    }
+  }
+
+  .facilities-columns {
+    margin: 0px;
+    .facilities-inner {
+      h4 {
+        text-transform: uppercase;
+      }
+      p {
+        span {
+          display: block;
+          margin-bottom: 15px;
+        }
+      }
     }
   }
 
   .hide-scrollbar {
     overflow-y: hidden;
+  }
+
+  .backToTop {
+    transition: all 1s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    &:hover, &:focus {
+      outline: none;
+    }
+    span {
+      display: block;
+      color: #28817f;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 500;
+    }
+    img {
+      display: block;
+      margin: 0px auto 10px auto;
+    }
+  }
+
+  @keyframes showScrollTopBtn {
+   from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes hideScrollTopBtn {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
 </style>

@@ -89,7 +89,7 @@
         left: 0px;
         width: 100vw;
         height: 100%;
-        background: url("../assets/images/home-banner.jpg");
+        background: url("../assets/images/home/home-banner.jpg");
         background-size: cover;
         background-position: top -220px center;
         background-repeat: no-repeat;

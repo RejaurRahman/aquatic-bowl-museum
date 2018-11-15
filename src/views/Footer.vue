@@ -13,6 +13,7 @@
   				<ul class="footer-menu">
   					<li><router-link to="/">Home</router-link></li>
       			<li><router-link to="/about">About</router-link></li>
+      			<li><router-link to="/discover-zone">Discover Zone</router-link></li>
   					<li><router-link to="/privacy">Privacy Policy</router-link></li>
       			<li><router-link to="/termsofuse">Terms of Use</router-link></li>
   				</ul>

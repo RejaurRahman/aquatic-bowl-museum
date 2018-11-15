@@ -48,7 +48,7 @@
     		padding: 0px;	
     		width: 100%;	
     		.home-banner {
-    			background: url("../assets/images/home-banner.jpg");
+    			background: url("../assets/images/home/home-banner.jpg");
     			background-size: cover;
     			background-position: top -221px center;
     			background-repeat: no-repeat;
