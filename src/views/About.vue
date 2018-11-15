@@ -80,8 +80,9 @@
 
     methods:{
       scrollToView() {
-        var scrollToFacilities = document.querySelector('.facilitySection');   
-        window.scrollTo(scrollToFacilities.offsetLeft, scrollToFacilities.offsetTop); 
+        document.querySelector('.facilitySection').scrollIntoView({
+          behavior: 'smooth'
+        });
       },
     }
   };
