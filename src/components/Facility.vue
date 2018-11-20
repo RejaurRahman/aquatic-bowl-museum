@@ -1,10 +1,19 @@
 <template>
-	<div class="columns facilities-columns">
-		<div class="column facilities-inner" v-for="(facility,index) in facilities" :key="index" :style="{'background-image': `url(${require('../assets/images/about/'+ facility.image+'.jpg')})`}">
-		  <h4>{{facility.name}}</h4>
-		  <p v-html="facility.bodycopy"></p>
-		</div>
-	</div>
+  <div>
+    <div 
+      class="columns facilities-columns" 
+      v-for="i in Math.ceil(facilities.length / 3)"
+    >
+      <div 
+        class="column facilities-inner" 
+        v-for="(facility, index) in facilities.slice((i - 1) * 3, i * 3)"
+        :style="'background-image : url(../assets/images/about/'+ facility.image +'.jpg)'"
+        >
+        <h4>{{facility.name}}</h4>
+        <p v-html="facility.bodycopy"></p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
