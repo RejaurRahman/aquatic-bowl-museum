@@ -16,7 +16,43 @@
 
 <script>
   export default {
-    name: "Home"
+    name: "Home",
+
+    metaInfo: {
+      title: 'Aquatic Bowl Museum | Home',
+			meta: [
+				{
+					vmid: 'description',
+        	'property': 'description',
+        	'content': 'Home description'
+      	},
+				{
+					vmid: 'og:title',
+					property: 'og:title', 
+					content: 'Home OG Title'
+				},
+				{
+					vmid: 'og:type',
+					property: 'og:type', 
+					content: 'Home website'
+				},
+				{
+					vmid: 'og:url',
+					property: 'og:url', 
+					content: 'http://rejaurrahmanprojects.co.uk/Aquatic-Bowl-Museum/#/'
+				},
+				{
+					vmid: 'og:image',
+					property: 'og:image', 
+					content: 'http://rejaurrahmanprojects.co.uk/Aquatic-Bowl-Museum/img/home-banner.53bc1824.jpg'
+				},
+				{
+					vmid: 'og:description',
+        	'property': 'og:description',
+        	'content': 'Home OG description'
+      	}
+    	]
+    }
   };
 </script>
 

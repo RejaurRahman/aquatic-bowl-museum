@@ -66,7 +66,43 @@
 
 <script>
   export default {
-    name: "Privacy"
+    name: "Privacy",
+
+    metaInfo: {
+      title: 'Aquatic Bowl Museum | Privacy Policy',
+      meta: [
+        {
+          vmid: 'description',
+          'property': 'description',
+          'content': 'Privacy description'
+        },
+        {
+          vmid: 'og:title',
+          property: 'og:title', 
+          content: 'Privacy OG Title'
+        },
+        {
+          vmid: 'og:type',
+          property: 'og:type', 
+          content: 'Privacy website'
+        },
+        {
+          vmid: 'og:url',
+          property: 'og:url', 
+          content: 'http://rejaurrahmanprojects.co.uk/Aquatic-Bowl-Museum/#/privacy'
+        },
+        {
+          vmid: 'og:image',
+          property: 'og:image', 
+          content: 'http://rejaurrahmanprojects.co.uk/Aquatic-Bowl-Museum/img/home-banner.53bc1824.jpg'
+        },
+        {
+          vmid: 'og:description',
+          'property': 'og:description',
+          'content': 'Privacy OG description'
+        }
+      ]
+    }
   };
 </script>
 

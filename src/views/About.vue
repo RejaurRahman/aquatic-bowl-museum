@@ -62,6 +62,43 @@
 
   export default {
     name: "About",
+
+    metaInfo: {
+      title: 'Aquatic Bowl Museum | About Aquatic Bowl Museum',
+      meta: [
+        {
+          vmid: 'description',
+          'property': 'description',
+          'content': 'About description'
+        },
+        {
+          vmid: 'og:title',
+          property: 'og:title', 
+          content: 'About OG Title'
+        },
+        {
+          vmid: 'og:type',
+          property: 'og:type', 
+          content: 'About website'
+        },
+        {
+          vmid: 'og:url',
+          property: 'og:url', 
+          content: 'http://rejaurrahmanprojects.co.uk/Aquatic-Bowl-Museum/#/about'
+        },
+        {
+          vmid: 'og:image',
+          property: 'og:image', 
+          content: 'http://rejaurrahmanprojects.co.uk/Aquatic-Bowl-Museum/img/about-banner.963b25b7.jpg'
+        },
+        {
+          vmid: 'og:description',
+          'property': 'og:description',
+          'content': 'About OG description'
+        }
+      ]
+    },
+
     data() {
       return {
 

@@ -162,7 +162,43 @@
 
 <script>
   export default {
-    name: "Terms"
+    name: "Terms",
+
+    metaInfo: {
+      title: 'Aquatic Bowl Museum | Terms of Use',
+			meta: [
+				{
+					vmid: 'description',
+        	'property': 'description',
+        	'content': 'Terms description'
+      	},
+				{
+					vmid: 'og:title',
+					property: 'og:title', 
+					content: 'Terms OG Title'
+				},
+				{
+					vmid: 'og:type',
+					property: 'og:type', 
+					content: 'Terms website'
+				},
+				{
+					vmid: 'og:url',
+					property: 'og:url', 
+					content: 'http://rejaurrahmanprojects.co.uk/Aquatic-Bowl-Museum/#/termsofuse'
+				},
+				{
+					vmid: 'og:image',
+					property: 'og:image', 
+					content: 'http://rejaurrahmanprojects.co.uk/Aquatic-Bowl-Museum/img/home-banner.53bc1824.jpg'
+				},
+				{
+					vmid: 'og:description',
+        	'property': 'og:description',
+        	'content': 'Terms OG description'
+      	}
+    	]
+    }
   };
 </script>
 
