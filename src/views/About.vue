@@ -8,7 +8,7 @@
           <p>Aquatic Bowl Museum has been located since April 2002 within Hollywood Bowl area in Finchley area, one of the most lucrative area in North London. Our Water Creature Museum hosts approximatley one million visitors every year.</p>
           <p>It is the second largest aquarium within London.</p>
           <p>Our guests will experience marine management as well as education from the top level in London as well as fun and interactive experience with all the sea and water creatures.</p>
-          <a class="scroll-down-section" @click="scrollToView()">view our facilities</a>
+          <a v-scroll-to="'.facilitySection'" class="scroll-down-section">view our facilities</a>
         </div>
         <div class="column is-half top-right-column">
           <div class="about-banner"></div>
@@ -112,13 +112,6 @@
     computed: {
       jsonData: function () {
         return facilities;
-      }
-    },
-
-    methods:{
-      scrollToView() {
-        // document.querySelector('.facilitySection').scrollIntoView({
-
       }
     }
   };

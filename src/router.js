@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import VueScrollTo from 'vue-scrollto';
 import Meta from 'vue-meta'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
@@ -9,6 +10,7 @@ import Terms from './views/Terms.vue'
 
 Vue.use(Router)
 Vue.use(Meta)
+Vue.use(VueScrollTo)
 
 export default new Router({
   routes: [

@@ -143,6 +143,7 @@
     		}
     		a {
     			color: #38d6d3;
+          font-weight: bold;
     		}
     	}
     	ul {

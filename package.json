@@ -11,7 +11,8 @@
     "vue": "^2.5.16",
     "vue-match-heights": "^0.1.1",
     "vue-meta": "^1.5.5",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-scrollto": "^2.13.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.10",
