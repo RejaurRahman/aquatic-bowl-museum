@@ -117,10 +117,9 @@
 
     methods:{
       scrollToView() {
-        document.querySelector('.facilitySection').scrollIntoView({
-          behavior: 'smooth'
-        });
-      },
+        // document.querySelector('.facilitySection').scrollIntoView({
+
+      }
     }
   };
 </script>

@@ -90,6 +90,15 @@
     			background-repeat: no-repeat;
     			width: 100vw;
     			height: 100%;
+	        &::before {
+	        	content: '';
+	        	position: absolute;
+	        	top: 0px;
+	        	background: rgba(0,0,0,0.6);
+	        	height: 100%;
+	        	width: 100%;
+	        	display: block;
+	    		}
     		}		
 			}
 			.top-left-column {

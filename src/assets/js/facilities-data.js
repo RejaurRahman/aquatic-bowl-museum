@@ -8,7 +8,7 @@ var facilities =
 	},
 	{
 		id:"buggy",
-		name:"Buggy Poilcy",
+		name:"Buggy Policy",
 		bodycopy:"<span>At Aquatic Bowl Museum there are no cloakroom facilities to store your belongings which also includes pushchairs.</span><span>If you have children and would like to use buggy or pushchair you are more than welcome to bring it with yourself into the museum, but it needs to be kept with you at all times. Any unattended items found with no identity will mostly likely be removed by our security team.</span>",
 		image:"buggy"
 	},

@@ -93,6 +93,15 @@
         background-size: cover;
         background-position: top -220px center;
         background-repeat: no-repeat;
+        &::before {
+        	content: '';
+        	position: absolute;
+        	top: 0px;
+        	background: rgba(0,0,0,0.6);
+        	height: 100%;
+        	width: 100%;
+        	display: block;
+    		}
       }
     }
     @media (max-width: 1085px) {
