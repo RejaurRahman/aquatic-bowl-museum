@@ -53,12 +53,15 @@
       </div>
     </div>
     <facility :facilities="jsonData" class="facilitySection"/>
+    <meet-staff :staffs="jsonData2" class="staffSection"/>
   </div>
 </template>
 
 <script>
   import Facility from '../components/Facility';
   import facilities from '../assets/js/facilities-data';
+  import MeetStaff from '../components/MeetStaff';
+  import staffs from '../assets/js/staff-data';
 
   export default {
     name: "About",
@@ -106,12 +109,16 @@
     },
 
     components: {
-      Facility
+      Facility,
+      MeetStaff
     },
 
     computed: {
       jsonData: function () {
         return facilities;
+      },
+      jsonData2: function () {
+        return staffs;
       }
     }
   };
