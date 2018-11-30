@@ -1,11 +1,13 @@
 <template>
-  <div>
-    <div class="staff-block" v-for="staff in staffs">
-      <a data-open="staff-Modal" :data-advisor-name="staff.name" class="staff meet-staff" @click="openModal(staff.staffid)">
-        <img :src="require('../assets/images/staff/'+staff.image+'.jpg')">
-        <h4>{{staff.name}}</h4>
-        <p class="jobTitle"><span>{{staff.jobtitle}}</span></p>
-      </a>
+  <div class="columns">
+    <div class="column is-3">
+      <div class="staff-block" v-for="staff in staffs">
+        <a data-open="staff-Modal" :data-advisor-name="staff.name" class="staff meet-staff" @click="openModal(staff.staffid)">
+          <img :src="require('../assets/images/staff/'+staff.image+'.jpg')">
+          <h4>{{staff.name}}</h4>
+          <p class="jobTitle"><span>{{staff.jobtitle}}</span></p>
+        </a>
+      </div>
     </div>
   </div>
 </template>
