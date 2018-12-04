@@ -94,12 +94,24 @@
     overflow-y: hidden;
   }
 
+  .modal {
+    .modal-content {
+      p {
+        color: #000;
+        margin-bottom: 16px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }     
+    }
+  }
+
   .backToTop {
     transition: all 1s ease;
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;
+    z-index: 0;
     cursor: pointer;
     &:hover, &:focus {
       outline: none;

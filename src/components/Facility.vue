@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="columns facilities-columns" v-for="i in Math.ceil(facilities.length / 3)">
-      <div class="column facilities-inner" :key="index" v-for="(facility, index) in facilities.slice((i - 1) * 3, i * 3)">
+      <div class="column facilities-inner" :key="index" v-for="(facility, index) in facilities.slice((i - 1) * 3, i * 3)" :style="{backgroundImage: 'url( ../assets/images/about/' + facility.image + '.jpg)'}">
         <h4>{{facility.name}}</h4>
         <p v-html="facility.bodycopy"></p>
       </div>
