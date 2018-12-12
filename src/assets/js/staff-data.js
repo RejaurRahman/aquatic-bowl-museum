@@ -18,19 +18,19 @@ var staffs =
 		image:"aquatic-staff-2",
 		overlayimage:"aquatic-staff-2"
 	},
-	"dominicballard":
+	"dominiclittle":
 	{
-		staffid:"dominicballard",
-		name:"Dominic Ballard",
+		staffid:"dominiclittle",
+		name:"Dominic Little",
 		jobtitle:"Work Experience Coordinator",
 		bio:"<p>Neque gravida in fermentum et sollicitudin ac. Viverra nam libero justo laoreet. Porttitor leo a diam sollicitudin tempor. Cursus mattis molestie a iaculis at. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. In vitae turpis massa sed elementum tempus egestas sed sed. Id porta nibh venenatis cras sed felis eget velit. Purus semper eget duis at tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique. In vitae turpis massa sed elementum. Facilisis sed odio morbi quis commodo odio.</p>",		
 		image:"aquatic-staff-3",
 		overlayimage:"aquatic-staff-3"
 	},
-	"jessicalittle":
+	"jessicaballard":
 	{
-		staffid:"jessicalittle",
-		name:"Jessica Little",
+		staffid:"jessicaballard",
+		name:"Jessica Ballard",
 		jobtitle:"Public Engagement Coordinator",
 		bio:"<p>Libero justo laoreet sit amet cursus sit. In nulla posuere sollicitudin aliquam ultrices sagittis orci. Purus sit amet volutpat consequat mauris nunc congue. Non quam lacus suspendisse faucibus interdum. Massa placerat duis ultricies lacus sed turpis tincidunt id.</p><p>Rhoncus mattis rhoncus urna neque viverra. Cras semper auctor neque vitae tempus quam pellentesque. Diam quam nulla porttitor massa id neque aliquam vestibulum morbi. Ac tortor dignissim convallis aenean et tortor at risus. Quis viverra nibh cras pulvinar mattis nunc sed. Hendrerit gravida rutrum quisque non tellus orci.</p><p>Ut morbi tincidunt augue interdum velit euismod. Non tellus orci ac auctor. Erat pellentesque adipiscing commodo elit at. At varius vel pharetra vel turpis nunc.</p>",		
 		image:"aquatic-staff-4",

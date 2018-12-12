@@ -1,6 +1,6 @@
 <template>
   <div class="staff-inner-container">
-    <div class="staff-block" v-for="staff in staffs">
+    <div class="staff-block" v-for="staff in getLastName">
       <a data-target="staffModal" class="staff meet-staff" @click="openModal(staff.staffid)">
         <img :src="require('../assets/images/staff/'+staff.image+'.jpg')">
         <h4>{{staff.name}}</h4>
@@ -31,8 +31,12 @@
     },
 
     computed: {
-      activeTeam: function(){
+      activeTeam: function() {
         return this.staffs[this.currentMember];
+      },
+      getLastName:function() {
+        var filteredList=this.$options.filters.pluck(this.staffs);
+        return filteredList;
       }
     },
 
@@ -86,7 +90,10 @@
         padding-right: 15px;
       }
     }
-    .modal { 
+    .modal {
+      .modal-background {
+        background: rgba(#000,.45);
+      }
     	.modal-content {
     		background: #FFF;
     		padding: 20px;
