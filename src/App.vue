@@ -68,10 +68,6 @@
       display: block;
       top: 0px;
       opacity: 0px;
-      &.display-overlay {
-        opacity: 0.75;
-        position: fixed;
-      }
     }
   }
 
@@ -127,6 +123,19 @@
     img {
       display: block;
       margin: 0px auto 10px auto;
+    }
+  }
+
+  html {
+    &.hide-scrollbar {
+      body {
+        @media (max-width: 1085px) {
+          .navbar-overlay {
+            opacity: 0.75;
+            position: fixed;
+          }
+        }
+      }
     }
   }
 

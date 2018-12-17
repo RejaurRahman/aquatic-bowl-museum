@@ -14,9 +14,9 @@
       <div class="navbar-menu menu-section" :class="{ 'is-active': showNav }">
         <div class="background-menu-layer"></div>
         <div class="navbar-start">
-          <router-link class="navbar-item page1" to="/">home</router-link>
-          <router-link class="navbar-item page2" to="/about">about aquatic bowl life</router-link>
-          <router-link class="navbar-item page2" to="/discover-zone">discover zone</router-link>
+          <a class="navbar-item page1" @click.prevent="goToMenu('/')" :class="{'router-link-exact-active': $route.path == '/'}">home</a>
+          <a class="navbar-item page2" @click.prevent="goToMenu('about')" :class="{'router-link-exact-active': $route.path == '/about'}">about</a>
+          <a class="navbar-item page3" @click.prevent="goToMenu('discover-zone')" :class="{'router-link-exact-active': $route.path == '/discover-zone'}">discover zone</a>
         </div>
       </div>
     </div>  
@@ -34,15 +34,24 @@
     },
 
     methods: {
+      goToMenu(path) {
+        this.showNav = !this.showNav;
+
+        var siteHtml = document.querySelector('html');
+        siteHtml.classList.remove('hide-scrollbar');
+
+        this.$router.push({path:path});
+      },
       menuClicked() {
         this.showNav = !this.showNav;
 
         var siteHtml = document.querySelector('html');
-        var overlay = document.querySelector('.navbar-overlay');
+        siteHtml.classList.add('hide-scrollbar');
 
-        siteHtml.classList.toggle('hide-scrollbar');
-        overlay.classList.toggle('display-overlay')
-      }
+        if (this.showNav == false) {
+          siteHtml.classList.remove('hide-scrollbar');
+        }
+      },
     },
 
     watch: {
@@ -93,6 +102,9 @@
         background-size: cover;
         background-position: top -220px center;
         background-repeat: no-repeat;
+        @media (max-width: 1085px) {
+          display: none;
+        }
         &::before {
         	content: '';
         	position: absolute;
