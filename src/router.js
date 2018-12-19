@@ -39,5 +39,8 @@ export default new Router({
       name: 'terms',
       component: Terms
     }
-  ]
+  ],
+  scrollBehavior () {
+    window.scrollTo(0, 0)
+  }
 })
