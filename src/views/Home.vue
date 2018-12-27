@@ -64,6 +64,8 @@
 		.top-layer-container {
 			margin: 0px auto;
 			position: relative;
+			max-width: 960px;
+      width: 960px;
 			@media screen and (min-width: 1472px) {
 				max-width: 1344px;
     		width: 1344px;
@@ -96,6 +98,10 @@
     		height: 100%;
     		padding: 0px;	
     		width: 100%;
+    		display: none;
+    		@media (min-width: 850px) {
+    			display: block;
+    		}
     		@media (max-width: 849px) {
     			display: none;
     		}
@@ -129,6 +135,10 @@
 	    	padding-bottom: 0px;
 	    	padding-left: 0px;
 	    	padding-right: 0px;
+	    	width: 100%;
+	    	@media (min-width: 850px) {
+	    		width: 50%;
+	    	}
 	    	@media (max-width: 849px) {
 	    		width: 100%;
 	    	}

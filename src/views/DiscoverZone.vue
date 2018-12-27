@@ -1,7 +1,18 @@
 <template>
   <div class="body-container">
+    <div class="discover-top-layer-container">
+      <div class="columns top-layer-container">
+        <div class="column is-half top-left-column">
+          <h1>discover zone</h1>
+          <zone-tabs class="tabSection"/>
+          <img src="../assets/images/zones/discover-banner.jpg" class="discover-banner-responsive">
+        </div>
+        <div class="column is-half top-right-column">
+          <div class="discover-banner"></div>
+        </div>
+      </div>
+    </div>
   	<div class="container">
-  		<h1>discover zone</h1>
 	  	<div class="discover-more-block-container">
 	  		<div class="discover-more-block">
 	  			<nav class="panel">
@@ -53,6 +64,8 @@
 </template>
 
 <script>
+  import ZoneTabs from '../components/ZoneTabs';
+
   export default {
     name: "DiscoverZone",
 
@@ -90,6 +103,16 @@
         	'content': 'Discover Zone OG description'
       	}
     	]
+    },
+
+    data() {
+      return {
+
+      }
+    },
+
+    components: {
+      ZoneTabs
     }
   };
 </script>
@@ -98,21 +121,92 @@
 <style scoped lang="scss">
   .body-container {
     padding-top: 105px;
-    h1 {
-    	padding-top: 50px;
-    	padding-bottom: 25px;
-    	padding-left: 12px;
-    	padding-right: 12px;
-			font-size: 32px;
-	    line-height: 1.2;
-	    text-transform: uppercase;
-	    font-weight: bold;
-	    margin: 0px;
-	    letter-spacing: 0.06em;
-	    color: #000;
-	    text-align: left;
-  	}
+    .discover-top-layer-container {
+      background: #008080;
+      .top-layer-container {
+        margin: 0px auto;
+        position: relative;
+        max-width: 960px;
+        width: 960px;
+        @media screen and (min-width: 1472px) {
+          max-width: 1344px;
+          width: 1344px;
+        }
+        @media screen and (min-width: 1280px) and (max-width: 1471px) {
+          max-width: 1152px;
+          width: 1152px;
+        }
+        @media screen and (min-width: 1085px) and (max-width: 1279px) {
+          max-width: 960px;
+          width: 960px;
+        }
+        @media screen and (min-width: 850px) and (max-width: 1084px) {
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+        .discover-banner-responsive {
+          @media (min-width: 850px) {
+            display: none !important;
+          }
+          @media (max-width: 849px) {
+            display: block !important;
+          }
+        }
+        .top-right-column {
+          position: absolute;
+          top: 0px;
+          left: 50%;
+          width: 50%;
+          height: 100%;
+          padding: 0px; 
+          width: 100%;
+	    		@media (min-width: 850px) {
+	    			display: block;
+	    		}
+	    		@media (max-width: 849px) {
+	    			display: none;
+	    		}
+          .discover-banner {
+            background: url("../assets/images/zones/discover-banner.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+          }   
+        }
+        .top-left-column {
+          background: #008080;
+          padding-bottom: 4.05555556rem;
+          padding-top: 4.05555556rem;
+          padding-left: 0px;
+          padding-right: 30px;
+		    	width: 100%;
+		    	@media (min-width: 850px) {
+		    		width: 50%;
+		    	}
+		    	@media (max-width: 849px) {
+		    		width: 100%;
+            padding-right: 0px;
+            padding-bottom: 0px;
+          }
+          h1 {
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 800;
+            text-transform: capitalize;
+            color: #FFF;
+            text-align: left;
+            @media (max-width: 849px) {
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+    }
     .discover-more-block-container {
+    	margin-top: 50px;
     	.discover-more-block {
     		margin: 0px 0px 50px 0px;
     		display: inline-block;

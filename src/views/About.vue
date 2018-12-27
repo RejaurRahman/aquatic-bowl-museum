@@ -141,6 +141,8 @@
       .top-layer-container {
         margin: 0px auto;
         position: relative;
+        max-width: 960px;
+        width: 960px;
         @media screen and (min-width: 1472px) {
           max-width: 1344px;
           width: 1344px;
@@ -173,9 +175,12 @@
           height: 100%;
           padding: 0px; 
           width: 100%;
+          @media (min-width: 850px) {
+            display: block;
+          }
           @media (max-width: 849px) {
             display: none;
-          } 
+          }
           .about-banner {
             background: url("../assets/images/about/about-banner.jpg");
             background-size: contain;
@@ -201,6 +206,10 @@
           padding-top: 4.05555556rem;
           padding-left: 0px;
           padding-right: 30px;
+          width: 100%;
+          @media (min-width: 850px) {
+            width: 50%;
+          }
           @media (max-width: 849px) {
             width: 100%;
             padding-right: 0px;
