@@ -9,6 +9,7 @@
           <p>It is the second largest aquarium within London.</p>
           <p>Our guests will experience marine management as well as education from the top level in London as well as fun and interactive experience with all the sea and water creatures.</p>
           <a v-scroll-to="'.facilitySection'" class="scroll-down-section">view our facilities</a>
+          <img src="../assets/images/about/about-banner.jpg" class="about-banner-responsive">
         </div>
         <div class="column is-half top-right-column">
           <div class="about-banner"></div>
@@ -54,6 +55,7 @@
     </div>
     <facility :facilities="jsonData" class="facilitySection"/>
     <meet-staff :staffs="jsonData2" class="staffSection"/>
+    <working-with-us :accordions="jsonData3" class="workingWithUsSection"/>
   </div>
 </template>
 
@@ -62,6 +64,8 @@
   import facilities from '../assets/js/facilities-data';
   import MeetStaff from '../components/MeetStaff';
   import staffs from '../assets/js/staff-data';
+  import WorkingWithUs from '../components/WorkingWithUs';
+  import accordions from '../assets/js/accordion-data';
 
   export default {
     name: "About",
@@ -110,19 +114,22 @@
 
     components: {
       Facility,
-      MeetStaff
+      MeetStaff,
+      WorkingWithUs
     },
 
     computed: {
-      jsonData: function () {
+      jsonData: function() {
         return facilities;
       },
-      jsonData2: function () {
+      jsonData2: function() {
         return staffs;
+      },
+      jsonData3: function() {
+        return accordions;
       }
     }
   };
-</script>
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -138,13 +145,25 @@
           max-width: 1344px;
           width: 1344px;
         }
-        @media screen and (1280px) and (max-width: 1471px) {
+        @media screen and (min-width:1280px) and (max-width: 1471px) {
           max-width: 1152px;
           width: 1152px;
         }
-        @media screen and (min-width: 1088px) and (max-width: 1279px) {
+        @media screen and (min-width: 1085px) and (max-width: 1279px) {
           max-width: 960px;
           width: 960px;
+        }
+        @media screen and (min-width: 850px) and (max-width: 1084px) {
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+        .about-banner-responsive {
+          @media (min-width: 850px) {
+            display: none !important;
+          }
+          @media (max-width: 849px) {
+            display: block !important;
+          }
         }
         .top-right-column {
           position: absolute;
@@ -153,14 +172,27 @@
           width: 50%;
           height: 100%;
           padding: 0px; 
-          width: 100%;  
+          width: 100%;
+          @media (max-width: 849px) {
+            display: none;
+          } 
           .about-banner {
             background: url("../assets/images/about/about-banner.jpg");
-            background-size: cover;
-            background-position: center center;
+            background-size: contain;
+            background-position: left center;
             background-repeat: no-repeat;
             width: 100%;
             height: 100%;
+            @media (min-width: 1085px) and (max-width: 1299px) {
+              background-position: left -100px center;
+            }
+            @media (min-width: 992px) and (max-width: 1084px) {
+              background-position: left -200px center;
+            }
+            @media (min-width: 850px) and (max-width: 991px) {
+              background-size: cover;
+              background-position: left -300px center;
+            }
           }   
         }
         .top-left-column {
@@ -169,6 +201,11 @@
           padding-top: 4.05555556rem;
           padding-left: 0px;
           padding-right: 30px;
+          @media (max-width: 849px) {
+            width: 100%;
+            padding-right: 0px;
+            padding-bottom: 0px;
+          }
           h1 {
             font-size: 32px;
             line-height: 1.2;
@@ -176,6 +213,10 @@
             text-transform: capitalize;
             color: #FFF;
             text-align: left;
+            @media (max-width: 849px) {
+              padding-left: 20px;
+              padding-right: 20px;
+            }
           }
           p {
             font-size: 16px;
@@ -183,6 +224,10 @@
             text-align: left;
             font-weight: normal;
             margin-top: 20px;
+            @media (max-width: 849px) {
+              padding-left: 20px;
+              padding-right: 20px;
+            }
           }
           a {
             display: block;
@@ -198,6 +243,11 @@
             transition: all 500ms ease;
             font-size: 16px;
             font-weight: 100;
+            @media (max-width: 849px) {
+              margin-left: 20px;
+              margin-right: 20px;
+              margin-bottom: 50px;
+            }
             &:hover {
               background: transparent;
               transition: all 500ms ease;
@@ -265,6 +315,15 @@
               padding-right: 20px;
               padding-top: 5px;
               font-weight: normal;
+            }
+          }
+        }
+        .about-opening-times-inner+.about-opening-times-inner {
+          @media (max-width: 767px) {
+            .schedule {
+              span {
+                border-top: none !important;
+              }
             }
           }
         }

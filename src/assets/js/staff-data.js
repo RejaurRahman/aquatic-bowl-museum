@@ -13,7 +13,7 @@ var staffs =
 	{
 		staffid:"leahquinn",
 		name:"Leah Quinn",
-		jobtitle:"Work Experience Coordinator",
+		jobtitle:"Curator",
 		bio:"<p>Adipiscing diam donec adipiscing tristique. Lobortis feugiat vivamus at augue. Morbi leo urna molestie at elementum. Nibh mauris cursus mattis molestie a iaculis at. Varius morbi enim nunc faucibus a pellentesque sit. Senectus et netus et malesuada. Sem nulla pharetra diam sit amet nisl suscipit. Ante metus dictum at tempor commodo ullamcorper. Cursus euismod quis viverra nibh cras. Convallis posuere morbi leo urna molestie at elementum eu. Nisi porta lorem mollis aliquam ut porttitor.</p><p>Platea dictumst quisque sagittis purus sit amet volutpat consequat. Feugiat nisl pretium fusce id velit ut tortor pretium. Dignissim sodales ut eu sem integer vitae justo eget magna. Tincidunt praesent semper feugiat nibh. A lacus vestibulum sed arcu non odio euismod lacinia. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Pretium nibh ipsum consequat nisl vel.</p>",		
 		image:"aquatic-staff-2",
 		overlayimage:"aquatic-staff-2"

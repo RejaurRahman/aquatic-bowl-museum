@@ -1,10 +1,12 @@
 <template>
   <div>
-    <div class="columns facilities-columns" v-for="i in Math.ceil(facilities.length / 3)">
-      <div class="column facilities-inner" :key="index" v-for="(facility, index) in facilities.slice((i - 1) * 3, i * 3)"  >
-        <div  class="facility-box">
-          <div class="facility-bg" v-on:mouseover="mouseOverCheck = facility.image"  v-on:mouseleave="mouseOverCheck = ''" v-bind:style="mouseOverCheck === facility.image ?   {'background-image': 'url(' + require('../assets/images/about/buggy.jpg') + ')'} : {'background-image': 'url(' + require('../assets/images/about/'+facility.image+'.jpg') + ')'} "></div>
-          <!-- <div class="facility-bg" v-on:mouseover="mouseOverCheck = facility.imagehover"  v-on:mouseleave="mouseOverCheck = ''" v-bind:style="mouseOverCheck === facility.imagehover ?   {'background-image': 'url(' + require('../assets/images/about/'+facility.imagehover+'.jpg') + ')'} : {'background-image': 'url(' + require('../assets/images/about/'+facility.image+'.jpg') + ')'}"></div> -->
+    <!-- <div class="columns facilities-columns" v-for="(i, ind1) in Math.ceil(getFacilities.length / 3)" :key="ind1"> -->
+      <!-- <div class="column facilities-inner" :key="index" v-for="(facility, index) in getFacilities.slice((i - 1) * 3, i * 3)"> -->
+    <div class="facilities-columns">
+      <div class="facilities-inner" :key="index" v-for="(facility, index) in getFacilities">
+        <div class="facility-box" @mouseenter="facility.changeImage = true" @mouseleave="facility.changeImage = false">
+          <img v-if="facility.changeImage" :src="require('../assets/images/about/hover/'+ facility.imagehover+'.jpg')" >
+          <img v-else :src="require('../assets/images/about/'+ facility.image+'.jpg')" >
           <h4>{{facility.name}}</h4>
           <p v-html="facility.bodycopy"></p>
         </div>
@@ -16,11 +18,15 @@
 <script>
   export default {
     name: "Facility",
+    
     data() {
       return {
-          mouseOverCheck: ''
+        mouseOverCheck: '',
+        currentImage:'',
+        getFacilities: this.facilities,
       }
     },
+    
     props: [
       'facilities'
     ]
@@ -34,13 +40,16 @@
       margin-bottom: 0px;
       .facilities-inner {
         padding: 0px 0px 20px 0px;
+        width: 33.33%;
+        display: inline-block;
+        vertical-align: top;
+        @media (min-width: 640px) and (max-width: 1199px) {
+          width: 50%;
+        }
+        @media (max-width: 639px) {
+          width: 100%;
+        }
         .facility-box {
-          .facility-bg {
-            height: 40vh;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-          }
           h4 {
             text-transform: uppercase;
             font-size: 32px;

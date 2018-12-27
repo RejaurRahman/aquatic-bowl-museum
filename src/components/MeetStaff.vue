@@ -1,5 +1,16 @@
 <template>
   <div class="staff-inner-container">
+    <div class="staff-section-heading-copy"> 
+      <div class="container">
+        <div class="columns">
+          <div class="column is-12"> 
+            <h2>meet the management team</h2>
+            <p>There is a huge ocean of opportunity at Aquatic Bowl Museum. There is every chance we have role which will be perfect for your skillset and experience. We do prefer people who just do not with the job title. We are looking for candidates who strive to reach their full potential and are ambitious in acquiring a personal short term or long term goal and not afraid to swim upstream to achieve the goal.</p>
+            <p>Meet the management team below.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="staff-block" v-for="staff in getLastName">
       <a data-target="staffModal" class="staff meet-staff" @click="openModal(staff.staffid)">
         <img :src="require('../assets/images/staff/'+staff.image+'.jpg')">
@@ -9,12 +20,12 @@
     </div>
     <div class="modal" id="staffModal" data-reveal :class="{'is-active':showModal}" v-show="showModal" @close="showModal = false">
       <div class="modal-background"></div>
-       <div class="modal-content">
+      <div class="modal-content">
         <h3 v-if="activeTeam">{{activeTeam.name}}</h3>
         <h4 v-if="activeTeam">{{activeTeam.jobtitle}}</h4>
-       	<div v-if="activeTeam" v-html="activeTeam.bio"></div>
-       	<button class="modal-close" @click="closeModal" aria-label="close"></button>
-       </div>
+        <div v-if="activeTeam" v-html="activeTeam.bio"></div>
+        <button class="modal-close" @click="closeModal" aria-label="close"></button>
+      </div>
     </div>
   </div>
 </template>
@@ -65,11 +76,42 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  .staff-section-heading-copy {
+    h2 {
+      text-transform: uppercase;
+      font-size: 32px;
+      line-height: 38px;
+      font-weight: 800;
+      color: #000;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    p {
+      font-size: 16px;
+      color: #000;
+      font-weight: normal;
+      margin-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
   .staffSection {
     padding-bottom: 50px;
     .staff-block {
       display: inline-flex;
       width: 25%;
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 33.33%;
+      }
+      @media (min-width: 640px) and (max-width: 767px) {
+        width: 50%;
+      }
+      @media (max-width: 639px) {
+        width: 100%;
+      }
       img {
         padding-top: 50px;
       }

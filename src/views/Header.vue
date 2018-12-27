@@ -102,7 +102,10 @@
         background-size: cover;
         background-position: top -220px center;
         background-repeat: no-repeat;
-        @media (max-width: 1085px) {
+        @media (min-width: 1085px) and (max-width: 1199px) {
+          background-position: top -140px center;
+        }
+        @media (max-width: 1084px) {
           display: none;
         }
         &::before {
@@ -116,7 +119,7 @@
     		}
       }
     }
-    @media (max-width: 1085px) {
+    @media (max-width: 1084px) {
       position: fixed;
     }
     .container {
@@ -125,7 +128,7 @@
         min-height: 100%;
         padding: 0.85rem .75rem;
         margin-left: 0px;
-        @media (min-width: 1086px) {
+        @media (min-width: 1085px) {
           width: 50%;
         }
         @media (max-width: 1085px) {
@@ -145,7 +148,7 @@
       }
       .navbar-burger {
         top: 4px;
-        @media (min-width: 1086px) {
+        @media (min-width: 1085px) {
           display: none !important;
         }
         &:hover, &:focus {
@@ -186,23 +189,31 @@
       }
       .navbar-menu {
         position: relative;
-        @media (min-width: 1086px) {
+        @media (min-width: 1085px) and (max-width: 1088px) {
+          width: 100%;
+        }
+        @media (min-width: 1085px) {
           display: flex;
           background: transparent;
           box-shadow: none;
           padding: 0px;
         }
-        @media (max-width: 1085px) {
+        @media (max-width: 1084px) {
           padding: 40px 0px;
           background: #38d6d3;
         }
         .navbar-start {
           margin-left: auto;
           margin-right: 0px;
-          @media (min-width: 1086px) and (max-width: 1088px) {
+          @media (min-width: 1085px) and (max-width: 1088px) {
             width: 100%;
             display: flex;
             margin: 0px 19.225px;
+            flex-direction: row;
+            justify-content: flex-end;
+          }
+          @media screen and (min-width: 1088px) and (max-width: 1088px) {
+            width: calc(50% - 30px) !important;
           }
           .navbar-item {
             color: #FFF;
@@ -218,17 +229,17 @@
               line-height: 18px;
               margin-right: 40px;
             }
-            @media (min-width: 1086px) and (max-width: 1279px) {
+            @media (min-width: 1085px) and (max-width: 1279px) {
               font-size: 16px;
               line-height: 16px;
               margin-right: 25px;
             }
-            @media (min-width: 1086px) and (max-width: 1088px) {
+            @media (min-width: 1085px) and (max-width: 1088px) {
               display: flex;
               flex-direction: column;
               justify-content: center;
             }
-            @media (max-width: 1085px) {
+            @media (max-width: 1084px) {
               margin-right: 0px;
               color: #FFF;
               padding: 20px 40px;
@@ -255,7 +266,7 @@
     }
   }
 
-  @media screen and (min-width: 1086px) and (max-width: 1279px) {
+  @media screen and (min-width: 1085px) and (max-width: 1279px) {
     .navbar {
       .container {
         max-width: 960px !important;

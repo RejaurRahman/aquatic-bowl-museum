@@ -72,10 +72,16 @@
 						display: block;
 						margin-right: auto;
 						margin-left: auto;
+						@media (max-width: 768px) {
+							margin-left: 0px;
+						}
 					}
 				}
 			}
 			.footer-menu {
+				@media (max-width: 768px) {
+					text-align: left;
+				}
 				li {
 					&:last-child {
 						a {
