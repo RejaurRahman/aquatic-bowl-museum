@@ -64,6 +64,14 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  .tabSection {
+    @media (max-width: 849px) {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 50px;
+    }
+  }
+
   .discover-tabs {
     align-items: stretch;
     display: flex;

@@ -159,6 +159,10 @@
           padding-right: 20px;
           padding-left: 20px;
         }
+        @media (max-width: 849px) {
+          width: 100%;
+          max-width: 100%;
+        }
         .about-banner-responsive {
           @media (min-width: 850px) {
             display: none !important;

@@ -82,6 +82,10 @@
 				padding-left: 20px;
     		padding-right: 20px;
 			}
+			@media (max-width: 849px) {
+				width: 100%;
+				max-width: 100%;
+			}
     	.home-banner-responsive {
     		@media (min-width: 850px) {
     			display: none !important;
@@ -156,6 +160,8 @@
 					@media (max-width: 849px) {
 						padding-left: 20px;
 						padding-right: 20px;
+						font-size: 55px;
+						line-height: 61px;
 					}
 				}
 				a {
@@ -175,6 +181,7 @@
 					@media (max-width: 849px) {
 						margin-left: 20px;
 						margin-right: 20px;
+						margin-bottom: 65px;
 					}
 					&:hover {
 						background: transparent;

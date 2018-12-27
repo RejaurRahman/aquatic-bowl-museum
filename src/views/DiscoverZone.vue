@@ -144,6 +144,10 @@
           padding-right: 20px;
           padding-left: 20px;
         }
+        @media (max-width: 849px) {
+          width: 100%;
+          max-width: 100%;
+        }
         .discover-banner-responsive {
           @media (min-width: 850px) {
             display: none !important;
@@ -211,10 +215,10 @@
     		margin: 0px 0px 50px 0px;
     		display: inline-block;
     		width: 25%;
-    		@media (min-width: 640px) and (max-width: 1199px) {
+    		@media (min-width: 641px) and (max-width: 1199px) {
     			width: 50%;
     		}
-    		@media (max-width: 639px) {
+    		@media (max-width: 640px) {
     			width: 100%;
     		}
     		.panel {
