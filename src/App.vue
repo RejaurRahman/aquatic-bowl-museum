@@ -139,6 +139,68 @@
     }
   }
 
+  .social-section {
+    text-align: left;
+    border-top: 1px solid #008080;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    @media (min-width: 40em) and (max-width: 1085px) {
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+    @media screen and (max-width: 39.9375em) {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    p {
+      color: #444;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 48px;
+      text-transform: uppercase;
+      font-weight: 500;
+      vertical-align: top;
+      padding-right: 15px;
+      font-size: 18px;
+    }
+    .share_twitter, .share_facebook, .share_linkedIn, .share_mail {
+      width: 44px;
+      display: inline-block;
+      margin-right: 10px;
+      &:hover {
+        a {
+          svg {
+            fill: #444;
+            transition: fill 0.5s ease;
+          }
+        }
+      }
+      &:hover, &:focus {
+        a {
+          background: none;
+          transition: none;
+        }
+      }
+      a {
+        display: block;
+        border: none;
+        width: inherit;
+        height: inherit;
+        line-height: inherit;
+        transition: none;
+        background: none;
+        @media screen and (max-width: 39.9375em) {
+          width: 100% !important;
+        }
+        svg {
+          fill: #008080;
+          transition: fill 0.5s ease;
+        }
+      }
+    }
+  }
+
   @keyframes showScrollTopBtn {
    from {
       opacity: 0;
