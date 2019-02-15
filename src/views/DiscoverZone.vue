@@ -4,7 +4,7 @@
       <div class="columns top-layer-container">
         <div class="column is-half top-left-column">
           <h1>discover zone</h1>
-          <zone-tabs class="tabSection"/>
+          <zone-tabs class="tabSection" />
           <img src="../assets/images/zones/discover-banner.jpg" class="discover-banner-responsive">
         </div>
         <div class="column is-half top-right-column">
@@ -12,53 +12,119 @@
         </div>
       </div>
     </div>
-  	<div class="container">
-	  	<div class="discover-more-block-container">
-	  		<div class="discover-more-block">
-	  			<nav class="panel">
-					  <p class="panel-heading">freshwater zone</p>
-					  <div class="panel-block">
-					  	<img src="../assets/images/zones/freshwater.jpg">
-					  </div>
-					  <div class="panel-block panel-footer">
-					    <button class="button is-link is-outlined is-fullwidth">go to zone</button>
-					  </div>
-					</nav>
-	  		</div>
-	  		<div class="discover-more-block">
-	  			<nav class="panel">
-					  <p class="panel-heading">ocean zone</p>
-					  <div class="panel-block">
-					  	<img src="../assets/images/zones/ocean.jpg">
-					  </div>
-					  <div class="panel-block panel-footer">
-					    <button class="button is-link is-outlined is-fullwidth">go to zone</button>
-					  </div>
-					</nav>
-	  		</div>
-	  		<div class="discover-more-block">
-	  			<nav class="panel">
-					  <p class="panel-heading">saltwater zone</p>
-					  <div class="panel-block">
-					  	<img src="../assets/images/zones/saltwater.jpg">
-					  </div>
-					  <div class="panel-block panel-footer">
-					    <button class="button is-link is-outlined is-fullwidth">go to zone</button>
-					  </div>
-					</nav>
-	  		</div>
-	  		<div class="discover-more-block">
-	  			<nav class="panel">
-					  <p class="panel-heading">shark zone</p>
-					  <div class="panel-block">
-							<img src="../assets/images/zones/shark.jpg">
-					  </div>
-					  <div class="panel-block panel-footer">
-					    <button class="button is-link is-outlined is-fullwidth">go to zone</button>
-					  </div>
-					</nav>
-	  		</div>
-	  	</div>
+    <div class="discover-zone-section">
+      <div class="top-section">
+        <div class="left-column aligned-flex">
+          <div class="left-inner position-relative">
+            <img src="../assets/images/zones/discover-zone/clownfish.jpg">
+            <div class="profile-copy">
+              <div class="zone-icon">
+                <img src="../assets/images/zones/discover-zone/clownfish-icon.png">
+              </div>
+              <h2>view the clownfish</h2>
+              <hr>
+              <p>The main character in the 2003 animated film Finding Nemo, was a clownfish.</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-column aligned-flex">
+          <div class="right-inner-top flexed-full">
+            <div class="left-top-column aligned-flex">
+              <div class="left-inner scaled-image">
+                <img src="../assets/images/zones/discover-zone/ocean.jpg">
+                <div class="animal-icon">
+                  <img src="../assets/images/zones/discover-zone/octopus-icon.png">
+                </div>
+              </div>
+            </div>
+            <div class="right-top-column centered-right-flex">
+              <div class="right-inner">
+                <div class="zone-icon">
+                  <img src="../assets/images/zones/discover-zone/ocean-icon.png">
+                </div>
+                <h2>view ocean zone</h2>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="right-inner-bottom flexed-full">
+            <div class="left-bottom-column centered-left-flex">
+              <div class="left-inner">
+                <div class="zone-icon">
+                  <img src="../assets/images/zones/discover-zone/saltwater-icon.png">
+                </div>
+                <h2>view saltwater zone</h2>
+                <hr>
+              </div>
+            </div>
+            <div class="right-bottom-column aligned-flex">
+              <div class="right-inner scaled-image">
+                <img src="../assets/images/zones/discover-zone/saltwater.jpg">
+                <div class="animal-icon">
+                  <img src="../assets/images/zones/discover-zone/hippo-tang-icon.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="left-column aligned-flex">
+          <div class="left-inner-top flexed-full">
+            <div class="left-top-column centered-left-flex">
+              <div class="left-inner">
+                <div class="zone-icon">
+                  <img src="../assets/images/zones/discover-zone/shark-icon.png">
+                </div>
+                <h2>view shark zone</h2>
+                <hr>
+              </div>
+            </div>
+            <div class="right-top-column aligned-flex">
+              <div class="right-inner scaled-image">
+                <img src="../assets/images/zones/discover-zone/shark.jpg">
+                  <div class="animal-icon">
+                    <img src="../assets/images/zones/discover-zone/hammerhead-shark-icon.png">
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="left-inner-bottom flexed-full">
+            <div class="left-bottom-column aligned-flex">
+              <div class="left-inner scaled-image">
+                <img src="../assets/images/zones/discover-zone/freshwater.jpg">
+                <div class="animal-icon">
+                  <img src="../assets/images/zones/discover-zone/goldfish-icon.png">
+                </div>
+              </div>
+            </div>
+            <div class="left-bottom-column centered-right-flex">
+              <div class="right-inner">
+                <div class="zone-icon">
+                  <img src="../assets/images/zones/discover-zone/freshwater-icon.png">
+                </div>
+                <h2>view freshwater zone</h2>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-column aligned-flex">
+          <div class="right-inner position-relative">
+            <img src="../assets/images/zones/discover-zone/dolphin.jpg">
+            <div class="profile-copy">
+              <div class="zone-icon">
+                <img src="../assets/images/zones/discover-zone/dolphin-icon.png">
+              </div>
+              <h2>view the dolphin</h2>
+              <hr>
+              <p>Dolphins communicate with each other by clicking, whistling and other sounds.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
       <div class="social-section">
         <p>share:</p>
         <div class="share_twitter">
@@ -95,15 +161,27 @@
           </a>
         </div>
       </div>
-	  </div>
+    </div>
+    <Footer></Footer>
+    <a @click="BackToTop()" class="backToTop">
+      <img src="../assets/images/back-to-top.png">
+      <span>scroll to top</span>
+    </a>
   </div>
 </template>
 
 <script>
   import ZoneTabs from '../components/ZoneTabs';
+  import Footer from "../views/Footer.vue"
 
   export default {
     name: "DiscoverZone",
+
+    data() {
+      return {
+
+      }
+    },
 
     metaInfo: {
       title: 'Aquatic Bowl Museum | Discover Zone',
@@ -141,14 +219,33 @@
     	]
     },
 
-    data() {
-      return {
+    methods:{
+      BackToTop() {
+        document.querySelector('.headerSection').scrollIntoView({
+          behavior: 'smooth'
+        });
+      },
+    },
 
+    mounted() {
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.querySelector('.backToTop').style.display = "block";
+          document.querySelector('.backToTop').style.animation = "showScrollTopBtn 2s 1";
+        } else {
+          document.querySelector('.backToTop').style.display = "none";
+          document.querySelector('.backToTop').style.animation = "hideScrollTopBtn 2s 1";
+        }
       }
     },
 
     components: {
-      ZoneTabs
+      ZoneTabs,
+      Footer
     }
   };
 </script>
@@ -157,6 +254,9 @@
 <style scoped lang="scss">
   .body-container {
     padding-top: 105px;
+    .social-section {
+      margin-top: 50px;
+    }
     .discover-top-layer-container {
       background: #008080;
       .top-layer-container {
@@ -200,12 +300,12 @@
           height: 100%;
           padding: 0px; 
           width: 100%;
-	    		@media (min-width: 850px) {
-	    			display: block;
-	    		}
-	    		@media (max-width: 849px) {
-	    			display: none;
-	    		}
+          @media (min-width: 850px) {
+            display: block;
+          }
+          @media (max-width: 849px) {
+            display: none;
+          }
           .discover-banner {
             background: url("../assets/images/zones/discover-banner.jpg");
             background-size: cover;
@@ -221,12 +321,12 @@
           padding-top: 4.05555556rem;
           padding-left: 0px;
           padding-right: 30px;
-		    	width: 100%;
-		    	@media (min-width: 850px) {
-		    		width: 50%;
-		    	}
-		    	@media (max-width: 849px) {
-		    		width: 100%;
+          width: 100%;
+          @media (min-width: 850px) {
+            width: 50%;
+          }
+          @media (max-width: 849px) {
+            width: 100%;
             padding-right: 0px;
             padding-bottom: 0px;
           }
@@ -245,72 +345,178 @@
         }
       }
     }
-    .discover-more-block-container {
-    	margin-top: 50px;
-    	.discover-more-block {
-    		margin: 0px 0px 50px 0px;
-    		display: inline-block;
-    		width: 25%;
-    		@media (min-width: 641px) and (max-width: 1199px) {
-    			width: 50%;
-    		}
-    		@media (max-width: 640px) {
-    			width: 100%;
-    		}
-    		.panel {
-    			padding: 0px 12px;
-          cursor: pointer;
-          &:hover {
-            .panel-block {
-              &.panel-footer {
-                background: #28817f;
-                color: #FFF;
-                transition: all 500ms ease;
-              }
-              button {
-                color: #FFF;
-                transition: all 500ms ease;              
-              }
-            }
+  }
+
+  .discover-zone-section {
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #444;
+      font-size: 24px;
+      line-height: 1.1;
+      font-weight: 500;
+      margin-bottom: 10px;
+      margin-top: 0px;
+      padding: 0px 15px;
+    }
+    hr {
+      position: relative;
+      border: none;
+      margin: 15px 0px 50px 0px;
+      padding: 0px;
+      height: 2px;
+      background: none;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 25%;
+        width: 50%;
+        height: 2px;
+        background: #444;
+        margin-bottom: 40px;
+      }
+    }
+    .position-relative {
+      position: relative;
+      .profile-copy {
+        position: absolute;
+        top: 0px;
+        height: calc(100% - 6px);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(0,0,0,0.4);
+        h2, p {
+          color: #FFF;
+        }
+        hr {
+          &::before {
+            background: #FFF;
           }
-    			.panel-heading {
-    				background: none;
-    				border: 1px solid #28817f;
-    				text-transform: uppercase;
-    				color: #363636;
-    				padding-top: 0px;
-    				padding-bottom: 0px;
-    				line-height: 46.8px;
-    				border-top-left-radius: 8px;
-    				border-top-right-radius: 8px;
-    			}
-    			.panel-block {
-    				padding: 0px;
-    				border: 1px solid #28817f;
-    				border-top: none;
-    				&.panel-footer {
-    					border-bottom-left-radius: 8px;
-    					border-bottom-right-radius: 8px;
-              color: #363636;
-              transition: all 500ms ease;
-    				}
-    				button {
-    					border: none;
-    					border-radius: 0px;
-    					text-transform: uppercase;
-    					color: #363636;
-    					&:hover {
-    						background: none;
-                color: #FFF;
-                transition: all 500ms ease;
-    					}
-    					&:focus {
-    						background: none;
-    					}
-    				}
-    			}
-    		}
-    	}
-  	}
+        }
+        p {
+          text-align: center;
+          font-size: 18px;
+          line-height: 1.1;
+          font-weight: 300;
+          margin: 0px;
+          padding: 0px 15px;
+        }
+      }
+    }
+    .zone-icon {
+      margin-bottom: 30px;
+    }
+    .aligned-flex {
+      display: inline-flex;
+      width: 50%;
+      .left-inner {
+        &.scaled-image {
+          height: calc(100% - 6px);
+        }
+      }
+      .right-inner {
+        &.scaled-image {
+          height: calc(100% - 7px);
+        }
+      }
+      .scaled-image {
+        overflow: hidden;
+        position: relative;
+        &:hover {
+          .animal-icon {
+            opacity: 1;
+            transition: all 800ms ease;
+          }
+          img {
+            transform: scale(2);
+            transition: all 800ms ease;
+          }
+        }
+        .animal-icon {
+          position: absolute;
+          top: 0px;
+          height: 100%;
+          width: 100%;
+          transform: translateY(50%);
+          opacity: 0;
+          transition: all 800ms ease;
+          img {
+            transform: scale(1) !important;
+          }
+        }
+        img {
+          transform: scale(1);
+          transition: all 800ms ease;
+        }
+      }
+    }
+    .flexed-full {
+      display: flex;
+      width: 100%;
+    }
+    .centered-left-flex, .centered-right-flex {
+      display: inline-flex;
+      width: 50%;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+      .left-inner, .right-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        background: #e4e4e4;
+      }
+    }
+    .centered-left-flex {
+      &::before {
+        border-width: 10.5px 0px 10.5px 11px;
+        border-color: transparent transparent transparent #e4e4e4;
+        right: -11px;
+      }
+      .left-inner {
+        height: calc(100% - 7px);
+      }
+    }
+    .centered-right-flex {
+      &::before {
+        border-width: 10.5px 11px 10.5px 0px;
+        border-color: transparent #e4e4e4 transparent transparent;
+        left: -11px;
+      }
+      .right-inner {
+        height: calc(100% - 6px);
+      }
+    }
+    .top-section {
+      display: flex;
+      .right-column {
+        flex-wrap: wrap;
+        .right-inner-bottom {
+          margin-top: -6px;
+        }
+      }
+    }
+    .bottom-section {
+      display: flex;
+      margin-top: -7px;
+      .left-column {
+        flex-wrap: wrap;
+        .left-inner-bottom {
+          margin-top: -7px;
+        }
+      }
+    }
   }
 </style>

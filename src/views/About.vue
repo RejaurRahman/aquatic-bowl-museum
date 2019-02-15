@@ -94,6 +94,11 @@
         </div>
       </div>
     </div>
+    <Footer></Footer>
+    <a @click="BackToTop()" class="backToTop">
+      <img src="../assets/images/back-to-top.png">
+      <span>scroll to top</span>
+    </a>
   </div>
 </template>
 
@@ -104,9 +109,16 @@
   import staffs from '../assets/js/staff-data';
   import WorkingWithUs from '../components/WorkingWithUs';
   import accordions from '../assets/js/accordion-data';
+  import Footer from "../views/Footer.vue"
 
   export default {
     name: "About",
+
+    data() {
+      return {
+
+      }
+    },
 
     metaInfo: {
       title: 'Aquatic Bowl Museum | About Aquatic Bowl Museum',
@@ -144,16 +156,35 @@
       ]
     },
 
-    data() {
-      return {
-
-      }
-    },
-
     components: {
       Facility,
       MeetStaff,
-      WorkingWithUs
+      WorkingWithUs,
+      Footer
+    },
+
+    mounted() {
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.querySelector('.backToTop').style.display = "block";
+          document.querySelector('.backToTop').style.animation = "showScrollTopBtn 2s 1";
+        } else {
+          document.querySelector('.backToTop').style.display = "none";
+          document.querySelector('.backToTop').style.animation = "hideScrollTopBtn 2s 1";
+        }
+      }
+    },
+
+    methods: {
+      BackToTop() {
+        document.querySelector('.headerSection').scrollIntoView({
+          behavior: 'smooth'
+        });
+      },
     },
 
     computed: {
@@ -225,21 +256,11 @@
           }
           .about-banner {
             background: url("../assets/images/about/about-banner.jpg");
-            background-size: contain;
-            background-position: left center;
+            background-size: cover;
+            background-position: center;
             background-repeat: no-repeat;
             width: 100%;
             height: 100%;
-            @media (min-width: 1085px) and (max-width: 1299px) {
-              background-position: left -100px center;
-            }
-            @media (min-width: 992px) and (max-width: 1084px) {
-              background-position: left -200px center;
-            }
-            @media (min-width: 850px) and (max-width: 991px) {
-              background-size: cover;
-              background-position: left -300px center;
-            }
           }   
         }
         .top-left-column {

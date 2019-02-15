@@ -80,9 +80,6 @@
 							<li>Consist of or contain any instructions, advice or other information which may be acted upon and could, if acted upon, cause illness, injury or death, or any other loss or damage.</li>
 							<li>Constitute spam.</li>
 							<li>Be offensive, deceptive, fraudulent, threatening, abusive, harassing, anti-social, menacing, hateful, discriminatory or inflammatory or cause annoyance, inconvenience or needless anxiety to any person.</li>
-							<li></li>
-							<li></li>
-							<li></li>
 						</ul>
 						<h3>limited warranties</h3>
 						<p>We do not warrant or represent:</p>
@@ -157,10 +154,17 @@
     		</div>
     	</div>
     </div>
+	  <Footer></Footer>
+	  <a @click="BackToTop()" class="backToTop">
+	    <img src="../assets/images/back-to-top.png">
+	    <span>scroll to top</span>
+	  </a>
   </div>
 </template>
 
 <script>
+	import Footer from "../views/Footer.vue"
+
   export default {
     name: "Terms",
 
@@ -198,6 +202,34 @@
         	'content': 'Terms OG description'
       	}
     	]
+    },
+
+    mounted() {
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.querySelector('.backToTop').style.display = "block";
+          document.querySelector('.backToTop').style.animation = "showScrollTopBtn 2s 1";
+        } else {
+          document.querySelector('.backToTop').style.display = "none";
+          document.querySelector('.backToTop').style.animation = "hideScrollTopBtn 2s 1";
+        }
+      }
+    },
+
+    components: {
+      Footer
+    },
+
+    methods: {
+      BackToTop() {
+        document.querySelector('.headerSection').scrollIntoView({
+          behavior: 'smooth'
+        });
+      },
     }
   };
 </script>
@@ -238,7 +270,7 @@
     			text-transform: uppercase;
     		}
     		a {
-    			color: #38d6d3;
+    			color: #008080;
     	    font-weight: bold;
     		}
     	}

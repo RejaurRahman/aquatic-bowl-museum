@@ -61,10 +61,17 @@
     		</div>
     	</div>
     </div>
+	  <Footer></Footer>
+	  <a @click="BackToTop()" class="backToTop">
+	    <img src="../assets/images/back-to-top.png">
+	    <span>scroll to top</span>
+	  </a>
   </div>
 </template>
 
 <script>
+	import Footer from "../views/Footer.vue"
+
   export default {
     name: "Privacy",
 
@@ -102,6 +109,34 @@
           'content': 'Privacy OG description'
         }
       ]
+    },
+
+    mounted() {
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.querySelector('.backToTop').style.display = "block";
+          document.querySelector('.backToTop').style.animation = "showScrollTopBtn 2s 1";
+        } else {
+          document.querySelector('.backToTop').style.display = "none";
+          document.querySelector('.backToTop').style.animation = "hideScrollTopBtn 2s 1";
+        }
+      }
+    },
+
+    components: {
+      Footer
+    },
+
+    methods: {
+      BackToTop() {
+        document.querySelector('.headerSection').scrollIntoView({
+          behavior: 'smooth'
+        });
+      },
     }
   };
 </script>
@@ -142,7 +177,7 @@
     			text-transform: uppercase;
     		}
     		a {
-    			color: #38d6d3;
+    			color: #008080;
           font-weight: bold;
     		}
     	}

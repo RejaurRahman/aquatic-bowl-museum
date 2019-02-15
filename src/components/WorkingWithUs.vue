@@ -74,7 +74,7 @@
       padding-left: 30px;
       padding-right: 30px;
       a {
-        color: #38d6d3;
+        color: #008080;
         font-weight: 600;
         font-size: 16px;
       }
@@ -89,12 +89,12 @@
         .accordion {
           &:last-child {
             .accordion-header {
-              border-bottom: 1px solid darken(#38d6d3, 20%);
+              border-bottom: 1px solid darken(#008080, 20%);
             }
             &.is-open {
               .accordion-body {
                 border-top: 0px;
-                border-bottom: 1px solid darken(#38d6d3, 20%);  
+                border-bottom: 1px solid darken(#008080, 20%);  
               }
             }
           }
@@ -107,9 +107,9 @@
               }
             }
             .accordion-body {
-              border-top: 1px solid darken(#38d6d3, 20%);
-              border-left: 1px solid darken(#38d6d3, 20%);
-              border-right: 1px solid darken(#38d6d3, 20%); 
+              border-top: 1px solid darken(#008080, 20%);
+              border-left: 1px solid darken(#008080, 20%);
+              border-right: 1px solid darken(#008080, 20%); 
             }
           }
           &.is-closed {
@@ -124,12 +124,12 @@
             cursor: pointer;
             line-height: 64px;
             height: 64px;
-            background: #38d6d3;
+            background: #008080;
             color: #FFF;
             font-weight: 600;
-            border-top: 1px solid darken(#38d6d3, 20%);
-            border-left: 1px solid darken(#38d6d3, 20%);
-            border-right: 1px solid darken(#38d6d3, 20%);
+            border-top: 1px solid darken(#008080, 20%);
+            border-left: 1px solid darken(#008080, 20%);
+            border-right: 1px solid darken(#008080, 20%);
             font-size: 20px;
             span {
               display: inline-block;
