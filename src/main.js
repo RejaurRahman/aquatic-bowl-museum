@@ -1,8 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import VueCarousel from 'vue-carousel';
 
 Vue.config.productionTip = false
+
+Vue.use(VueCarousel);
 
 Vue.filter('pluck', function (value) {
    var lastNameObjects=Object.values(value).sort(function(a,b){

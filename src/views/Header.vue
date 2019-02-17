@@ -12,7 +12,6 @@
         </div>
       </div>
       <div class="navbar-menu menu-section" :class="{ 'is-active': showNav }">
-        <div class="background-menu-layer"></div>
         <div class="navbar-start">
           <a class="navbar-item page1" @click.prevent="goToMenu('/')" :class="{'router-link-exact-active': $route.path == '/'}">home</a>
           <a class="navbar-item page2" @click.prevent="goToMenu('about')" :class="{'router-link-exact-active': $route.path == '/about'}">about</a>
@@ -53,32 +52,6 @@
         }
       },
     },
-
-    watch: {
-      '$route'(to) {
-        if (to.name == 'home') {
-          var navbar = document.querySelector('nav.navbar');
-          navbar.classList.add('homeNavbar');
-          navbar.classList.remove('notHomeNavbar');
-        } else if (to.name !== 'home') {
-          var navbar = document.querySelector('nav.navbar');
-          navbar.classList.add('notHomeNavbar');
-          navbar.classList.remove('homeNavbar');
-        }
-      }
-    },
-
-    mounted() {
-      if (this.$route.name == 'home') {
-        var navbar = document.querySelector('nav.navbar');
-        navbar.classList.add('homeNavbar');
-        navbar.classList.remove('notHomeNavbar');
-      } else if (this.$route.name != 'home') {
-        var navbar = document.querySelector('nav.navbar');
-        navbar.classList.add('notHomeNavbar');
-        navbar.classList.remove('homeNavbar');
-      }
-    }
   }
 </script>
 
@@ -86,38 +59,69 @@
   .navbar {
     width: 100%;
     height: 105px;
-    background-color: transparent;
     position: absolute;
     top: 0px;
     z-index: 3;
-    &.notHomeNavbar {
+    background: transparent;
+    &::before {
+      content: '';
+      width: 50%;
+      height: 100%;
+      position: absolute;
       background: #38d6d3;
-      .background-menu-layer {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100vw;
+    }
+    &.homeNav, &.otherNav {
+      &::after {
+        content: '';
+        width: 50%;
         height: 100%;
-        background: url("../assets/images/home/home-banner.jpg");
-        background-size: cover;
-        background-position: top -220px center;
-        background-repeat: no-repeat;
-        @media (min-width: 1085px) and (max-width: 1199px) {
-          background-position: top -140px center;
-        }
-        @media (max-width: 1084px) {
-          display: none;
-        }
-        &::before {
-        	content: '';
-        	position: absolute;
-        	top: 0px;
-        	background: rgba(0,0,0,0.6);
-        	height: 100%;
-        	width: 100%;
-        	display: block;
-    		}
+        margin-left: 50%;
+        position: absolute;
+        z-index: -1;
       }
+    }
+    &.homeNav {
+      &::after {
+        background: #FFF;
+        opacity: 0.6;
+      }
+      .navbar-menu {
+        .navbar-start {
+          .navbar-item {
+            color: #444;
+            transition: all 500ms ease;
+            &.router-link-exact-active {
+              color: #008080;
+              transition: all 500ms ease;
+            }
+            &:hover {
+              color: #008080;
+              transition: all 500ms ease;
+            }
+          }
+        }
+      } 
+    }
+    &.otherNav {
+      &::after {
+        background: #008080;
+      }
+      .navbar-menu {
+        .navbar-start {
+          .navbar-item {
+            color: #FFF;
+            transition: all 500ms ease;
+            &.router-link-exact-active {
+              color: #38d6d3;
+              transition: all 500ms ease;
+            }
+            &:hover {
+              color: #38d6d3;
+              transition: all 500ms ease;
+            }
+          }
+        }
+      } 
     }
     @media (max-width: 1084px) {
       position: fixed;
@@ -216,7 +220,6 @@
             width: calc(50% - 30px) !important;
           }
           .navbar-item {
-            color: #FFF;
             font-size: 20px;
             line-height: 20px;
             font-weight: normal;
@@ -251,14 +254,10 @@
               margin-right: 0px;
             }
             &.router-link-exact-active {
-              color: #28817f;
               background: transparent;
-              transition: all 500ms ease;
             }
             &:hover {
-              color: #28817f;
               background: transparent;
-              transition: all 500ms ease;
             }
           }
         }

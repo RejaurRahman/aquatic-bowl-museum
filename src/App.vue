@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header class="headerSection"></Header>
+    <Header :class="{ 'homeNav': $route.path == '/', 'otherNav': $route.path !== '/' }"></Header>
     <router-view />
   </div>
 </template>
@@ -8,13 +8,24 @@
 <script>
   import './assets/fonts/fonts.scss';
   import 'bulma/css/bulma.min.css';
+  import 'fullpage.js/dist/fullpage.min.css';
   import Header from "./views/Header.vue"
+  import Home from "./views/Home.vue"
+  import About from "./views/About.vue"
+  import DiscoverZone from "./views/DiscoverZone.vue"
+  import Privacy from "./views/Privacy.vue"
+  import Terms from "./views/Terms.vue"
 
   export default {
     name: 'app',
 
     components: {
-      Header
+      Header,
+      Home,
+      About,
+      DiscoverZone,
+      Privacy,
+      Terms
     },
   }
 </script>
@@ -164,6 +175,35 @@
         svg {
           fill: #008080;
           transition: fill 0.5s ease;
+        }
+      }
+    }
+  }
+
+  .home-page {
+    .fp-section {
+      padding: 0px;
+      &:last-child {
+        height: 100% !important;
+        .fp-tableCell {
+          height: 100%!important;
+        }
+      }
+      .fp-tableCell {
+        .home-container {
+          .home-slide-section {
+            height: 100vh;
+            background-repeat: no-repeat !important;
+            justify-content: space-between;
+            .home-slide-inner {
+              margin: 0px;
+              padding-top: 119px;
+              height: 100vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+          }
         }
       }
     }

@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueFullPage from 'vue-fullpage.js'
 import Router from 'vue-router'
 import VueScrollTo from 'vue-scrollto';
 import Meta from 'vue-meta'
@@ -8,6 +9,7 @@ import DiscoverZone from './views/DiscoverZone.vue'
 import Privacy from './views/Privacy.vue'
 import Terms from './views/Terms.vue'
 
+Vue.use(VueFullPage)
 Vue.use(Router)
 Vue.use(Meta)
 Vue.use(VueScrollTo)
