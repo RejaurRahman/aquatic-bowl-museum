@@ -226,7 +226,6 @@
             text-transform: uppercase;
             margin-right: 40px;
             padding: 0px;
-            text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
             @media (min-width: 1280px) and (max-width: 1471px) {
               font-size: 18px;
               line-height: 18px;
