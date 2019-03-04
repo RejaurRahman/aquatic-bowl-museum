@@ -14,7 +14,7 @@
         <Footer></Footer>
       </div>
     </full-page>
-    <div id="home-nav">
+    <div id="home-nav" :class="{ 'left-side-nav': directionSliderNav }">
       <ul>
         <li v-for="(k, index) in slideNavItems" :key="index">
           <a :href="'#' + k.id" :class="[isHovering == index && k.isActive ? 'hover-view': '']" @mouseover="mouseHover(k, index)" @mouseleave="mouseHoverOut(k)" :data-menuanchor="k.id" @click="moveTo(k.id)">
@@ -101,6 +101,16 @@
     	]
     },
 
+    props: ["directionSliderNav"],
+
+    mounted() {
+      if (this.currentSlide == 1) {
+        this.$emit('directionSliderNav', true);
+      } else {
+        this.$emit('directionSliderNav', false);
+      }
+    },
+
     methods: {
       moveTo(to) {
         this.currentSlide = parseInt(to.substr(5));
@@ -109,6 +119,12 @@
 
       onLeave (origin, destination, direction) {
         this.isHovering = this.currentSlide = destination.index;
+
+        if (destination.index == 1) {
+          this.$emit('directionSliderNav', true);
+        } else {
+          this.$emit('directionSliderNav', false);
+        }
       },
 
       mouseHover(k, index) {

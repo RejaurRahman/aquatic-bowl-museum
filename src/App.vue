@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <Header :class="{ 'homeNav': $route.path == '/', 'otherNav': $route.path !== '/' }"></Header>
-    <router-view />
+    <router-view
+      @directionSliderNav="v => directionSliderNav = v"
+      :directionSliderNav="directionSliderNav"
+    ></router-view>
   </div>
 </template>
 
@@ -18,7 +21,11 @@
 
   export default {
     name: 'app',
-
+    data() {
+      return {
+        directionSliderNav: true
+      }
+    },
     components: {
       Header,
       Home,
@@ -415,6 +422,90 @@
                   animation: trackBallSlide 5s linear infinite;
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #home-nav {
+    position: fixed;
+    display: flex;
+    height: calc(100vh - 65px * 2);
+    margin-top: 65px;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+    top: 0px;
+    transition: all 500ms ease;
+    @media (max-width: 1023px) {
+      display: none !important;
+    }
+    &:not(.left-side-nav) {
+      right: 0px !important;
+      ul {
+        li {
+          a {
+            span {
+              &.nav-icon {
+                margin: 0px 0px 0px auto !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.left-side-nav {
+      left: 0px !important;
+      ul {
+        li {
+          a {
+            span {
+              &.nav-icon {
+                margin: 0px auto 0px 0px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    ul {
+      li {
+        &:last-child {
+          a {
+            span {
+              &.nav-icon {
+                margin-bottom: 0px !important;
+              }
+            }
+          }
+        }
+        a {
+          display: block;
+          position: relative;
+          padding-top: 11px;
+          padding-bottom: 11px;
+          &.active, &.hover-view {
+            span {
+              &.nav-icon {
+                border-radius: 0px !important;
+                width: 90px !important;
+                height: 7px !important;
+                left: 0px;
+                transition: all 500ms ease;
+              }
+            }
+          }
+          span {
+            &.nav-icon {
+              display: block;
+              background: #38d6d3;
+              width: 48px;
+              height: 2px;
+              left: 30px;
+              border-radius: 0px;
+              transition: all 500ms ease;
             }
           }
         }
