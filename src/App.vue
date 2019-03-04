@@ -444,6 +444,7 @@
     }
     &:not(.left-side-nav) {
       right: 0px !important;
+      transition: all 500ms ease;
       ul {
         li {
           a {
@@ -458,6 +459,7 @@
     }
     &.left-side-nav {
       left: 0px !important;
+      transition: all 500ms ease;
       ul {
         li {
           a {
