@@ -17,7 +17,7 @@
         <div class="left-column aligned-flex">
           <div class="left-inner position-relative">
             <img src="../assets/images/zones/discover-zone/clownfish.jpg">
-            <div class="profile-copy">
+            <div class="profile-copy" @click="AnimalProfileButton()">
               <div class="zone-icon">
                 <img src="../assets/images/zones/discover-zone/clownfish-icon.png">
               </div>
@@ -225,6 +225,10 @@
           behavior: 'smooth'
         });
       },
+      AnimalProfileButton() {
+        this.$router.push('/animalprofile')
+        window.scrollTo(0, 0)
+      }
     },
 
     mounted() {

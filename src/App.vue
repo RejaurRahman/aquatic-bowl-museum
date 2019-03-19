@@ -515,6 +515,95 @@
     }
   }
 
+  .animal-profile-container {
+    position: relative;
+    .animal-selection {
+      .VueCarousel-wrapper {
+        .VueCarousel-slide {
+          .animal-bg {
+            height: 80vh;
+            width: 100%;
+            img {
+              display: block;
+            }
+          }
+        }
+      }
+      .VueCarousel-pagination {
+        margin: 0px auto;
+        padding-right: 10%;
+        @media screen and (min-width: 1472px) {
+          max-width: 1344px;
+          width: 1344px;
+        }
+        @media screen and (min-width: 1280px) and (max-width: 1471px) {
+          max-width: 1152px;
+          width: 1152px;
+        }
+        @media screen and (min-width: 1088px) and (max-width: 1279px) {
+          max-width: 960px;
+          width: 960px;
+        }
+        .VueCarousel-dot-container {
+          margin-top: 0px !important;
+          @media screen and (min-width: 1472px) {
+            margin-left: calc(1344px / 2 + 15%);
+          }
+          @media screen and (min-width: 1280px) and (max-width: 1471px) {
+            margin-left: calc(1280px / 2 + 15%);
+          }
+          @media screen and (min-width: 1088px) and (max-width: 1279px) {
+            margin-left: calc(960px / 2 + 15%);
+          }
+          .VueCarousel-dot {
+            padding: 0px !important;
+            margin: 0px 10px !important;
+            &:hover, &:focus {
+              outline: none;
+            }
+            &:not(.VueCarousel-dot--active) {
+              background: #008080 !important;
+              transition: all 500ms ease;
+            }
+            &.VueCarousel-dot--active {
+              background: #38d6d3 !important;
+              transition: all 500ms ease;
+            }
+          }
+        }
+      }
+    }
+    .box-container {
+      .wave-box {
+        width: 100%;
+        height: 84px;
+        top: -108px;
+        display: block;
+        position: absolute;
+        background: url("./assets/images/zones/wave.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .animal-box {
+        h2 {
+          text-transform: uppercase;
+          font-weight: 300;
+          font-size: 50px;
+          line-height: 56px;
+          padding: 40px 0px 0px 0px;
+        }
+        h3 {
+          text-transform: uppercase;
+          font-weight: 300;
+          font-size: 30px;
+          line-height: 36px;
+          color: #38d6d3;
+          padding-bottom: 40px;
+        }
+      }
+    }
+  }
+
   @keyframes showScrollTopBtn {
    from {
       opacity: 0;

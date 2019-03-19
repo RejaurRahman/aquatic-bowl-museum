@@ -6470,9 +6470,9 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-carousel@^0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/vue-carousel/-/vue-carousel-0.17.0.tgz#aada1f63a99352ba9581fc70d60f6bb0e6eee24d"
+vue-carousel@^0.18.0-alpha:
+  version "0.18.0-alpha"
+  resolved "https://registry.yarnpkg.com/vue-carousel/-/vue-carousel-0.18.0-alpha.tgz#4957ef61bf12d38c4c7db7f245073b1d6bb3233a"
   dependencies:
     global "^4.3.2"
     regenerator-runtime "^0.12.1"

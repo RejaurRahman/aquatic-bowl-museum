@@ -71,6 +71,10 @@
                 font-size: 4.99776710684274vh !important;
                 line-height: 4.769456604559634vh !important;
               }
+              @media (min-width: 1024px) and (max-height: 640px) {
+                font-size: 37.7568px !important;
+                line-height: 36.2956px !important;
+              }
               @media (min-width: 1024px) and (min-height: 640px) and (max-height: 700px) {
                 padding-bottom: 15px;
               }
@@ -100,7 +104,7 @@
             }
           }
           .bottom-inner-section {
-            height: calc(30% - 60px);
+            height: calc(30% - 80px);
             margin-top: 10%;
             width: 60%;
             display: flex;

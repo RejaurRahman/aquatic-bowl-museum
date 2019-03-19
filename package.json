@@ -9,7 +9,7 @@
   "dependencies": {
     "bulma": "^0.7.2",
     "vue": "^2.5.16",
-    "vue-carousel": "^0.17.0",
+    "vue-carousel": "^0.18.0-alpha",
     "vue-fullpage.js": "^0.1.2",
     "vue-match-heights": "^0.1.1",
     "vue-meta": "^1.5.5",

@@ -39,7 +39,9 @@
         var siteHtml = document.querySelector('html');
         siteHtml.classList.remove('hide-scrollbar');
 
-        this.$router.push({path:path});
+        this.$router.push({ path:path });
+
+        window.scrollTo(0, 0)
       },
       menuClicked() {
         this.showNav = !this.showNav;

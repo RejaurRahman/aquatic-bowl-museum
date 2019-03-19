@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import VueFullPage from 'vue-fullpage.js'
 import Router from 'vue-router'
-import VueScrollTo from 'vue-scrollto';
+import VueScrollTo from 'vue-scrollto'
+import VueCarousel from 'vue-carousel'
 import Meta from 'vue-meta'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import DiscoverZone from './views/DiscoverZone.vue'
+import AnimalProfile from './views/AnimalProfile.vue'
 import Privacy from './views/Privacy.vue'
 import Terms from './views/Terms.vue'
 
@@ -13,8 +15,10 @@ Vue.use(VueFullPage)
 Vue.use(Router)
 Vue.use(Meta)
 Vue.use(VueScrollTo)
+Vue.use(VueCarousel)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -32,6 +36,11 @@ export default new Router({
       component: DiscoverZone
     },
     {
+      path: '/animalprofile',
+      name: 'animalprofile',
+      component: AnimalProfile
+    },
+    {
       path: '/privacy',
       name: 'privacy',
       component: Privacy
@@ -40,9 +49,10 @@ export default new Router({
       path: '/termsofuse',
       name: 'terms',
       component: Terms
+    },
+    {
+      path: '*', 
+      redirect: '/'
     }
-  ],
-  scrollBehavior () {
-    window.scrollTo(0, 0)
-  }
+  ]
 })
