@@ -546,6 +546,8 @@
         }
         .VueCarousel-dot-container {
           margin-top: 0px !important;
+          position: relative;
+          z-index: 1;
           @media screen and (min-width: 1472px) {
             margin-left: calc(1344px / 2 + 15%);
           }
@@ -570,35 +572,6 @@
               transition: all 500ms ease;
             }
           }
-        }
-      }
-    }
-    .box-container {
-      .wave-box {
-        width: 100%;
-        height: 84px;
-        top: -108px;
-        display: block;
-        position: absolute;
-        background: url("./assets/images/zones/wave.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-      .animal-box {
-        h2 {
-          text-transform: uppercase;
-          font-weight: 300;
-          font-size: 50px;
-          line-height: 56px;
-          padding: 40px 0px 0px 0px;
-        }
-        h3 {
-          text-transform: uppercase;
-          font-weight: 300;
-          font-size: 30px;
-          line-height: 36px;
-          color: #38d6d3;
-          padding-bottom: 40px;
         }
       }
     }
