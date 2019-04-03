@@ -5,9 +5,9 @@
     <div class="facilities-columns">
       <div class="facilities-inner" :key="index" v-for="(facility, index) in getFacilities">
         <div class="facility-box" @mouseenter="facility.changeImage = true" @mouseleave="facility.changeImage = false">
-          <img v-if="facility.changeImage" :src="require('../assets/images/about/hover/'+ facility.imagehover+'.jpg')">
-          <img v-else :src="require('../assets/images/about/'+ facility.image+'.jpg')">
-          <h4>{{facility.name}}</h4>
+          <img v-if="facility.changeImage" :src="require('../assets/images/about/hover/' + facility.imagehover + '.jpg')">
+          <img v-else :src="require('../assets/images/about/' + facility.image+'.jpg')">
+          <h4>{{ facility.name }}</h4>
           <p v-html="facility.bodycopy"></p>
         </div>
       </div>

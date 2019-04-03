@@ -220,6 +220,7 @@
         line-height: inherit;
         transition: none;
         background: none;
+        pointer-events: none;
         @media screen and (max-width: 39.9375em) {
           width: 100% !important;
         }
@@ -519,6 +520,7 @@
     position: relative;
     .animal-selection {
       .VueCarousel-wrapper {
+        z-index: 2;
         .VueCarousel-slide {
           .animal-bg {
             height: 80vh;

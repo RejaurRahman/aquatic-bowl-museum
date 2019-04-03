@@ -29,11 +29,15 @@
         </slide>
       </carousel>
       <div class="box-container">
+        <button class="previous-profile"></button>
+        <button class="next-profile"></button>
         <div class="container">
           <div class="wave-box"></div>
           <div class="animal-box">
+            <button class="previous-zone">back to zones</button>
             <div class="inner-box-shadow"></div>
             <h2>clownfish</h2>
+            <span class="scientific-name">(Amphiprion ocellaris)</span>
             <h3>saltwater</h3>
             <p>
               <span>Though they spend much of their lives swimming among the tentacles of their host anemone, common clownfish occasionally leave to feed. They are plankton pickers, which means they visually seek and eat individual zooplankton or phytoplankton floating in the water column. They also likely eat algae from the reef surface. Because of the protection afforded them by their host anemones, common clownfish have few predators, but they are at risk of predation when they leave the anemone to feed.</span>
@@ -43,6 +47,13 @@
             <div class="columns image-vector-container">
               <div class="column is-two-fifths image-vector-inner">
                 <img src="../assets/images/zones/saltwater/clownfish/vector.png" class="image-vector">
+              </div>
+              <div class="column is-three-fifths did-you-know-box">
+                <div class="did-you-know-box-inner">
+                  <h5>did you know?</h5>
+                  <hr>
+                  <h4>Clownfish get their name from the bold color strokes on their body, like a clown’s face paint.</h4>
+                </div>
               </div>
             </div>       
           </div>
@@ -86,7 +97,7 @@
 			      <div class="social-section">
 			        <p>share:</p>
 			        <div class="share_twitter">
-			          <a href="" class="aquatic-bowl-museum_shareTwitter" data-destination-url="" target="_blank" title="Tweet">
+			          <a class="aquatic-bowl-museum_shareTwitter" data-destination-url="" target="_blank" title="Tweet">
 			            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
 			              <path d="M34.5 16.7c0 0 3.2 0.4 4.1-0.2 -1.5 0.8-3 1.8-4.2 3 0 0 1.2 13.3-12.7 16.5 0 0-7.2 0.6-12.3-3.3 0 0 5.5 1.5 8.5-1.9 0 0-5.1 0.5-6.4-3.5 1.2 0 2.4-0.2 3.6-0.5 0 0-4.8-0.9-4.7-5.7 0.8 0.5 1.7 0.7 2.7 0.7 0 0-4-3.6-1.5-7.8 0 0 5.3 6.5 11.9 6.1 -0.8-3 1-6.1 4.1-6.9 2-0.5 4 0.1 5.4 1.5 1.4-0.3 2.7-0.9 3.9-1.9C36.8 13 36.9 14.8 34.5 16.7z"/>
 			              <path d="M23.5 46C11.1 46 1 35.9 1 23.5 1 11.1 11.1 1 23.5 1 35.9 1 46 11.1 46 23.5 46 35.9 35.9 46 23.5 46zM23.5 2C11.6 2 2 11.6 2 23.5 2 35.4 11.6 45 23.5 45 35.4 45 45 35.4 45 23.5 45 11.6 35.4 2 23.5 2z"/>
@@ -94,7 +105,7 @@
 			          </a>
 			        </div>
 			        <div class="share_facebook">
-			          <a href="" class="aquatic-bowl-museum_shareFacebook" data-destination-url="" target="_blank" title="Share on Facebook">
+			          <a class="aquatic-bowl-museum_shareFacebook" data-destination-url="" target="_blank" title="Share on Facebook">
 			            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
 			              <path d="M19.1 20.6h-4.9V25h4.9v13h5.8V25h5.8v-4.3h-5.8v-1.7c0-1.3 1.4-4 3.4-4h2.4v-4.3h-5.1C18.5 11.5 19.1 20.6 19.1 20.6z"/>
 			              <path d="M23.5 46C11.1 46 1 35.9 1 23.5 1 11.1 11.1 1 23.5 1 35.9 1 46 11.1 46 23.5 46 35.9 35.9 46 23.5 46zM23.5 2C11.6 2 2 11.6 2 23.5 2 35.4 11.6 45 23.5 45 35.4 45 45 35.4 45 23.5 45 11.6 35.4 2 23.5 2z"/>
@@ -102,7 +113,7 @@
 			          </a>
 			        </div>
 			        <div class="share_linkedIn">
-			          <a href="" class="aquatic-bowl-museum_shareIn" data-destination-url="" target="_blank" title="Share on LinkedIn">
+			          <a class="aquatic-bowl-museum_shareIn" data-destination-url="" target="_blank" title="Share on LinkedIn">
 			            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
 			              <path d="M33.3 12H13.7c-0.9 0-1.7 0.7-1.7 1.7v19.7c0 0.9 0.8 1.7 1.7 1.7h19.6c0.9 0 1.7-0.7 1.7-1.7V13.7C35 12.7 34.2 12 33.3 12zM18.8 31.6h-3.4v-11h3.4V31.6L18.8 31.6zM17.1 19.1c-1.1 0-2-0.9-2-2 0-1.1 0.9-2 2-2s2 0.9 2 2C19.1 18.2 18.2 19.1 17.1 19.1zM31.6 31.6h-3.4v-5.3c0-1.3 0-2.9-1.8-2.9 -1.8 0-2 1.4-2 2.8v5.4H21v-11h3.3v1.5h0c0.5-0.9 1.6-1.8 3.2-1.8 3.5 0 4.1 2.3 4.1 5.2L31.6 31.6 31.6 31.6z"/>
 			              <path d="M23.5 46C11.1 46 1 35.9 1 23.5 1 11.1 11.1 1 23.5 1 35.9 1 46 11.1 46 23.5 46 35.9 35.9 46 23.5 46zM23.5 2C11.6 2 2 11.6 2 23.5 2 35.4 11.6 45 23.5 45 35.4 45 45 35.4 45 23.5 45 11.6 35.4 2 23.5 2z"/>
@@ -110,7 +121,7 @@
 			          </a>
 			        </div>
 			        <div class="share_mail">
-			          <a href="" class="aquatic-bowl-museum_shareMail" data-destination-url="" target="_blank" title="Send email">
+			          <a class="aquatic-bowl-museum_shareMail" data-destination-url="" target="_blank" title="Send email">
 			            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
 			              <path d="M37.5 34H12c-1.1 0-2-0.9-2-2V13.3h25.5c1.1 0 2 0.9 2 2V34zM11 14.3V32c0 0.6 0.5 1 1 1h24.5V15.3c0-0.6-0.5-1-1-1H11z"/>
 			                <polygon points="23.8 26.9 13.6 20.7 14.2 19.8 23.8 25.7 33.3 19.8 33.9 20.7 "/>
@@ -222,12 +233,69 @@
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: -24px;
+        position: relative;
+        .did-you-know-box {
+          padding: 0px 50px;
+          .did-you-know-box-inner {
+            background: #008080;
+            padding: 30px 40px;
+            h5 {
+              font-size: 16px;
+              line-height: 20px;
+              letter-spacing: 2px;
+              font-weight: 600;
+              color: #FFF;
+              text-transform: uppercase;
+              margin-bottom: 15px;
+            }
+            hr {
+              width: 35px;
+              margin-left: auto;
+              margin-right: auto;
+              height: 4px;
+              background: #38d6d3;
+            }
+            h4 {
+              font-size: 24px;
+              line-height: 30px;
+              font-weight: bold;
+              color: #FFF;
+            }
+          }
+        }
+        .previous-profile, .next-profile {
+          position: fixed;
+          background: url("../assets/images/back-to-top.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 48px;
+          height: 24px;
+          margin-top: -24px;
+          cursor: pointer;
+          top: 50%;
+          z-index: 1;
+          appearance: none;
+          border: none;
+          padding: 0px;
+          &:focus {
+            outline: none;
+          }
+        }
+        .previous-profile {
+          left: 15px;
+          transform: rotate(-90deg);
+        }
+        .next-profile {
+          right: 15px;
+          transform: rotate(90deg);
+        }
         .wave-box {
           width: 100%;
           height: 84px;
           top: -84px;
           display: block;
           position: absolute;
+          z-index: 2;
           background: url("../assets/images/zones/wave.png");
           background-size: cover;
           background-repeat: no-repeat;
@@ -246,12 +314,52 @@
             display: block;
             position: absolute;
           }
+          .previous-zone {
+            appearance: none;
+            box-shadow: none;
+            border: 2px solid #008080;
+            color: #008080;
+            background: #FFF;
+            text-transform: uppercase;
+            font-weight: 300;
+            position: absolute;
+            top: 0px;
+            left: 40px;
+            cursor: pointer;
+            width: 175px;
+            height: 40px;
+            font-size: 18px;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: block;
+            transition: all 500ms ease;
+            &:hover {
+              background: #008080;
+              color: #FFF;
+              transition: all 500ms ease;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
           h2 {
             text-transform: uppercase;
             font-weight: 300;
             font-size: 50px;
             line-height: 56px;
             padding: 40px 0px 0px 0px;
+          }
+          span {
+            &.scientific-name {
+              display: block;
+              font-style: italic;
+              text-transform: capitalize;
+              font-size: 30px;
+              line-height: 36px;
+              font-weight: 300;
+              color: #2c3e50;
+              margin-bottom: 5px;
+            }
           }
           h3 {
             text-transform: uppercase;
@@ -300,6 +408,8 @@
       	.fish-info-section {
       		background: #008080;
       		padding: 40px 0px;
+          position: relative;
+          z-index: 2;
       		.fish-info-column {
       			margin: 0px;
       			text-align: left;

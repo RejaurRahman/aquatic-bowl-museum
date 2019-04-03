@@ -13,12 +13,12 @@
     </div>
     <div class="staff-block" v-for="staff in getLastName">
       <a data-target="staffModal" class="staff meet-staff" @click="openModal(staff.staffid)">
-        <img :src="require('../assets/images/staff/'+staff.image+'.jpg')">
+        <img :src="require('../assets/images/staff/' + staff.image + '.jpg')">
         <h4>{{staff.name}}</h4>
         <p class="jobTitle"><span>{{staff.jobtitle}}</span></p>
       </a>
     </div>
-    <div class="modal" id="staffModal" data-reveal :class="{'is-active':showModal}" v-show="showModal" @close="showModal = false">
+    <div class="modal" id="staffModal" data-reveal :class="{ 'is-active': showModal }" v-show="showModal" @close="showModal = false">
       <div class="modal-background"></div>
       <div class="modal-content">
         <h3 v-if="activeTeam">{{activeTeam.name}}</h3>

@@ -41,6 +41,11 @@ export default new Router({
       component: AnimalProfile
     },
     {
+      path: '/animalprofile/:animal-name',
+      name: 'animalprofile',
+      component: AnimalProfile
+    },
+    {
       path: '/privacy',
       name: 'privacy',
       component: Privacy

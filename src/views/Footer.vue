@@ -46,6 +46,8 @@
 <style scoped lang="scss">
 	footer {
 		background: #444;
+		position: relative;
+        z-index: 2;
 		.top-layer {
 			padding: 5.16666667rem 0px 1.38888889rem 0px;
 		}
