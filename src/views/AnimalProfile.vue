@@ -34,13 +34,13 @@
         <div class="container">
           <div class="wave-box"></div>
           <div class="animal-box">
-            <button class="previous-zone">back to zones</button>
+            <button class="previous-zone" @click="animalProfileBack()">back to zones</button>
             <div class="inner-box-shadow"></div>
             <h2>clownfish</h2>
             <span class="scientific-name">(Amphiprion ocellaris)</span>
             <h3>saltwater</h3>
             <p>
-              <span>Though they spend much of their lives swimming among the tentacles of their host anemone, common clownfish occasionally leave to feed. They are plankton pickers, which means they visually seek and eat individual zooplankton or phytoplankton floating in the water column. They also likely eat algae from the reef surface. Because of the protection afforded them by their host anemones, common clownfish have few predators, but they are at risk of predation when they leave the anemone to feed.</span>
+              <span class="highlighted-text">Though they spend much of their lives swimming among the tentacles of their host anemone, common clownfish occasionally leave to feed. They are plankton pickers, which means they visually seek and eat individual zooplankton or phytoplankton floating in the water column. They also likely eat algae from the reef surface. Because of the protection afforded them by their host anemones, common clownfish have few predators, but they are at risk of predation when they leave the anemone to feed.</span>
               <span>The common clownfish's lifecycle is both interesting and rare. Like all clownfishes, this species changes sex throughout its lifetime. Sex change is not particularly rare, but most species change from female to male. The clownfishes change from male to female. All individuals hatch as males and eventually join groups of a few individuals living together in an anemone. The largest individual of each group is the only female, and she and the largest male are the only two that reproduce. The large, dominant female lays her eggs on the reef surface, and the male fertilizes them. Together, they guard the nest from egg predators until they hatch. If anything happens to the female, the reproductive male changes sex, becoming the dominant female. The next largest male then becomes reproductively active, and the other males in the group continue to be subordinate.</span>
               <span>The common clownfish is extremely popular in the aquarium trade. Some individuals are bright orange and white, while others are dark black and white. The stark colors and the relationship with anemones make this species highly desirable for public and private aquaria. They have long been collected for sale in that industry, but recent efforts to promote reproduction in captivity have been successful, so many of the individuals for sale in pet stores have been reared in aquaria. The conservation status of this species is currently unknown, but it has likely been depleted in some areas as a result of its collection for the pet trade. Fortunately, the continued development of a captive breeding program has reduced the pressure on wild populations.</span>
             </p>
@@ -61,7 +61,76 @@
         <div class="divider"></div>
         <div class="container">
         	<div class="related-section">
-        		
+        		<div class="related-block">
+              <div class="related-inner">
+                <img src="../assets/images/zones/saltwater/atlantic-tarpon/cover.jpg" class="image-header">
+                <div class="related-info">
+                  <h2>atlantic tarpon</h2>
+                  <p>Megalops atlanticus</p>
+                  <span>view profile ></span>
+                </div>
+              </div>  
+            </div>
+            <div class="related-block">
+              <div class="related-inner">
+                <img src="../assets/images/zones/saltwater/butterflyfish/cover.jpg" class="image-header">
+                <div class="related-info">
+                  <h2>butterflyfish</h2>
+                  <p>Megalops atlanticus</p>
+                  <span>view profile ></span>
+                </div>
+              </div> 
+            </div>
+            <div class="related-block">
+              <div class="related-inner">
+                <img src="../assets/images/zones/saltwater/emperor-angelfish/cover.jpg" class="image-header">
+                <div class="related-info">
+                  <h2>emperor angelfish</h2>
+                  <p>Megalops atlanticus</p>
+                  <span>view profile ></span>
+                </div>
+              </div> 
+            </div>
+            <div class="related-block">
+              <div class="related-inner">
+                <img src="../assets/images/zones/saltwater/hippo-tang/cover.jpg" class="image-header">
+                <div class="related-info">
+                  <h2>hippo tang</h2>
+                  <p>Megalops atlanticus</p>
+                  <span>view profile ></span>
+                </div>
+              </div> 
+            </div>
+            <div class="related-block">
+              <div class="related-inner">
+                <img src="../assets/images/zones/saltwater/lionfish/cover.jpg" class="image-header">
+                <div class="related-info">
+                  <h2>lionfish</h2>
+                  <p>Megalops atlanticus</p>
+                  <span>view profile ></span>
+                </div>
+              </div> 
+            </div>
+            <div class="related-block">
+              <div class="related-inner">
+                <img src="../assets/images/zones/saltwater/longhorn-cowfish/cover.jpg" class="image-header">
+                <div class="related-info">
+                  <h2>longhorn cowfish</h2>
+                  <p>Megalops atlanticus</p>
+                  <span>view profile ></span>
+                </div>
+              </div> 
+            </div>
+            <div class="related-block">
+              <div class="related-inner">
+                <img src="../assets/images/zones/saltwater/yellow-surgeonfish/cover.jpg" class="image-header">
+                <div class="related-info">
+                  <h2>yellow surgeonfish</h2>
+                  <p>Megalops atlanticus</p>
+                  <span>view profile ></span>
+                </div>
+              </div> 
+            </div>
         	</div>
         </div>
         <div class="divider"></div>
@@ -143,6 +212,7 @@
 </template>
 
 <script>
+  import profiles from '../assets/js/animal-data'
   import Footer from "../views/Footer.vue"
   import { Carousel, Slide } from "vue-carousel"
 
@@ -151,7 +221,9 @@
 
     data() {
       return {
-        navigateTo: 0
+        navigateTo: 0,
+        selectedAnimal: '',
+        routeParamsCountry: this.$route.params.animal-name
       }
     },
 
@@ -191,12 +263,33 @@
     	]
     },
 
+    computed: {
+      json () {
+        return profiles
+      },
+      animalDetail () {
+        return this.json[this.$route.params.animal-name]
+      }
+    },
+
+    watch: {
+      selectedAnimal (value) {
+        if (value) {
+          this.$router.push('/animalprofile/' + value)
+        }
+      }
+    },
+
     methods:{
-      BackToTop() {
+      BackToTop () {
         document.querySelector('.headerSection').scrollIntoView({
           behavior: 'smooth'
         });
       },
+      animalProfileBack () {
+        this.$router.push('/discover-zone')
+        window.scrollTo(0, 0)
+      }
     },
 
     mounted() {
@@ -213,6 +306,8 @@
           document.querySelector('.backToTop').style.animation = "hideScrollTopBtn 2s 1";
         }
       }
+
+      this.selectedAnimal = this.$route.params.animal-name
     },
 
     components: {
@@ -375,6 +470,10 @@
             span {
               display: block;
               margin-bottom: 20px;
+              &.highlighted-text {
+                color: #38d6d3;
+                font-size: 20px;
+              }
             }
           }
           .image-vector-container {
@@ -385,9 +484,6 @@
             padding-bottom: 60px;
             .image-vector-inner {
               padding: 0px;
-              .image-vector {
-
-              }
             }
           }
         }
@@ -401,6 +497,49 @@
       	.related-section {
       		padding: 45px 0px 60px 0px;
       		background: #FFF;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          .related-block {
+            width: 33.33%;
+            flex-basis: auto;
+            .related-inner {
+              padding: 20px;
+              .related-info {
+                border-left: 1px solid #008080;
+                border-right: 1px solid #008080;
+                border-bottom: 1px solid #008080;
+                margin-top: -7px;
+                padding: 20px;
+                text-align: left;
+                background: #008080;
+                h2 {
+                  text-transform: uppercase;
+                  font-size: 22px;
+                  line-height: 26px;
+                  font-weight: bold;
+                  margin-bottom: 15px;
+                  color: #38d6d3;
+                }
+                p {
+                  text-transform: capitalize;
+                  font-size: 17px;
+                  line-height: 23px;
+                  font-weight: 400;
+                  margin-bottom: 15px;
+                  color: #38d6d3;
+                }
+                span {
+                  text-transform: uppercase;
+                  display: block;
+                  font-size: 17px;
+                  line-height: 23px;
+                  font-weight: bold;
+                  color: #FFF;
+                }
+              }
+            }
+          }
       	}
       	.empty-block {
       		height: 60px;

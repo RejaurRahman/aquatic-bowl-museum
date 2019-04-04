@@ -1,4 +1,4 @@
-var domains =
+var profiles =
 {
   'arapaima':
   {
@@ -610,4 +610,4 @@ var domains =
   }
 }
 
-export default domains
+export default profiles

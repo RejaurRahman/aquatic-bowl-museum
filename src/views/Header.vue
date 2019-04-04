@@ -83,6 +83,8 @@
       }
     }
     &.homeNav {
+      background: #FFF;
+      opacity: 0.6;
       &::after {
         background: #FFF;
         opacity: 0.6;
@@ -105,6 +107,7 @@
       } 
     }
     &.otherNav {
+      background: #008080;
       &::after {
         background: #008080;
       }
