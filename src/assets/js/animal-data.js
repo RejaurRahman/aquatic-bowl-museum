@@ -587,7 +587,8 @@ var profiles =
     ecosystemHabitat: 'The yellow surgeonfish lives in coral-rich areas in lagoon and marine reefs',
     feedingHabits: 'Herbivore',
     conservationStatus: 'Species not evaluated (according to the red list of endangered species)',
-    taxanomy: 'Order Perciformes, Family Acanthuridae'
+    taxanomy: 'Order Perciformes, Family Acanthuridae',
+    didYouKnow: 'They can be aggressive towards fish of the same species like the blue tang, but the problem can be solved by introducing all the fish at the same time.'
   },
   'zebra-shark':
   {

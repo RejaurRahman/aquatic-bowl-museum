@@ -14,11 +14,11 @@
       <div class="navbar-menu menu-section" :class="{ 'is-active': showNav }">
         <div class="navbar-start">
           <a class="navbar-item page1" @click.prevent="goToMenu('/')" :class="{'router-link-exact-active': $route.path == '/'}">home</a>
-          <a class="navbar-item page2" @click.prevent="goToMenu('about')" :class="{'router-link-exact-active': $route.path == '/about'}">about</a>
-          <a class="navbar-item page3" @click.prevent="goToMenu('discover-zone')" :class="{'router-link-exact-active': $route.path == '/discover-zone'}">discover zone</a>
+          <a class="navbar-item page2" @click.prevent="goToMenu('/about')" :class="{'router-link-exact-active': $route.path == '/about'}">about</a>
+          <a class="navbar-item page3" @click.prevent="goToMenu('/discover-zone')" :class="{'router-link-exact-active': $route.path == '/discover-zone' || $route.path.includes('/animalprofile') }">discover zone</a>
         </div>
       </div>
-    </div>  
+    </div>
   </nav>
 </template>
 
@@ -83,8 +83,6 @@
       }
     }
     &.homeNav {
-      background: #FFF;
-      opacity: 0.6;
       &::after {
         background: #FFF;
         opacity: 0.6;
@@ -104,7 +102,7 @@
             }
           }
         }
-      } 
+      }
     }
     &.otherNav {
       background: #008080;
@@ -126,7 +124,7 @@
             }
           }
         }
-      } 
+      }
     }
     @media (max-width: 1084px) {
       position: fixed;

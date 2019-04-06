@@ -174,6 +174,9 @@
     border-top: 1px solid #008080;
     padding-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     @media (min-width: 40em) and (max-width: 1085px) {
       margin-right: 50px;
       margin-left: 50px;
@@ -193,6 +196,9 @@
       vertical-align: top;
       padding-right: 15px;
       font-size: 18px;
+    }
+    .social-section-icons {
+      display: inline-flex;
     }
     .share_twitter, .share_facebook, .share_linkedIn, .share_mail {
       width: 44px;
@@ -377,6 +383,7 @@
                     background: #008080;
                     color: #FFF;
                     border: 2px solid #008080;
+                    outline: none;
                     transition: all 500ms ease;
                   }
 
@@ -579,6 +586,21 @@
     }
   }
 
+  .animal-box {
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      span {
+        display: block;
+        margin-bottom: 20px;
+        &.highlighted-text {
+          color: #38d6d3;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
   @keyframes showScrollTopBtn {
    from {
       opacity: 0;
@@ -718,6 +740,16 @@
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
    .centered-flex {
       display: block !important;
+    }
+    .staffSection .staff-block,
+    .discover-zone-section .aligned-flex {
+      display: inline-block !important;
+    }
+    .navbar.homeNav {
+      background: #FFF;
+    }
+    .social-section {
+      padding-top: 0px;
     }
   }
 

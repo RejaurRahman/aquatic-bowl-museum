@@ -6,7 +6,7 @@
           <div class="container-section">
             <div class="top-inner-section">
               <h1>discover the aquatic bowl experience</h1>
-              <button class="blue-button link-icon">
+              <button class="blue-button link-icon" @click="discoverZone()">
                 <span>view the fish zones</span>
               </button>
             </div>
@@ -26,6 +26,12 @@
 <script>
   export default {
     name: "Slide1",
+    methods:{
+      discoverZone() {
+        this.$router.push('/discover-zone')
+        window.scrollTo(0, 0)
+      }
+    }
   };
 </script>
 

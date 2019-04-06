@@ -36,14 +36,10 @@ export default new Router({
       component: DiscoverZone
     },
     {
-      path: '/animalprofile',
+      path: '/animalprofile/:animalname',
       name: 'animalprofile',
-      component: AnimalProfile
-    },
-    {
-      path: '/animalprofile/:animal-name',
-      name: 'animalprofile',
-      component: AnimalProfile
+      component: AnimalProfile,
+      props: true
     },
     {
       path: '/privacy',
@@ -56,7 +52,7 @@ export default new Router({
       component: Terms
     },
     {
-      path: '*', 
+      path: '*',
       redirect: '/'
     }
   ]
