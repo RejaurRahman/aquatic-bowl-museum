@@ -227,8 +227,10 @@
           width: 960px;
         }
         @media screen and (min-width: 850px) and (max-width: 1084px) {
-          padding-right: 20px;
-          padding-left: 20px;
+          padding-right: 30px;
+          padding-left: 30px;
+          width: 100%;
+          max-width: 100%;
         }
         @media (max-width: 849px) {
           width: 100%;
@@ -246,10 +248,12 @@
           position: absolute;
           top: 0px;
           left: 50%;
-          width: 50%;
           height: 100%;
           padding: 0px; 
           width: 100%;
+          @media (min-width: 850px) and (max-width: 1024px) {
+            width: 50%;
+          }
           @media (min-width: 850px) {
             display: block;
           }
@@ -318,9 +322,8 @@
             font-size: 16px;
             font-weight: 100;
             @media (max-width: 849px) {
-              margin-left: 20px;
-              margin-right: 20px;
-              margin-bottom: 50px;
+              margin: 30px auto 50px auto;
+              width: calc(100% - 30px);
             }
             &:hover {
               background: transparent;

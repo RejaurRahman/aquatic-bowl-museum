@@ -331,8 +331,16 @@ export default {
       background-size: cover;
       margin-top: -24px;
       position: relative;
+      @media screen and (max-width: 1024px) {
+      	margin-top: -20px;
+      	background: none;
+    	}
       .did-you-know-box {
         padding: 0px 50px;
+        @media screen and (max-width: 768px) {
+        	margin-top: 40px;
+        	padding: 0px;
+      	}
         .did-you-know-box-inner {
           background: #008080;
           padding: 30px 40px;
@@ -381,10 +389,16 @@ export default {
       .previous-profile {
         left: 15px;
         transform: rotate(-90deg);
+        @media (max-width: 639px) {
+        	left: 5px;
+      	}
       }
       .next-profile {
         right: 15px;
         transform: rotate(90deg);
+        @media (max-width: 639px) {
+        	right: 5px;
+      	}
       }
       .wave-box {
         width: 100%;
@@ -396,10 +410,21 @@ export default {
         background: url("../assets/images/zones/wave.png");
         background-size: cover;
         background-repeat: no-repeat;
+        @media screen and (max-width: 1024px) {
+        	width: calc(100% - 60px);
+        	left: 30px;
+      	}
+      	@media screen and (max-width: 639px) {
+      		height: 60px;
+      		top: -60px;
+      	}
       }
       .animal-box {
         background: #FFF;
         padding: 0px 30px;
+        @media screen and (max-width: 1024px) {
+        	padding: 30px 30px 0px 30px;
+      	}
         .inner-box-shadow {
           background: url("../assets/images/zones/wave2.png");
           background-repeat: no-repeat;
@@ -410,6 +435,9 @@ export default {
           left: -55px;
           display: block;
           position: absolute;
+          @media screen and (max-width: 1024px) {
+          	display: none;
+        	}
         }
         .previous-zone {
           appearance: none;
@@ -430,6 +458,10 @@ export default {
           padding-right: 15px;
           display: block;
           transition: all 500ms ease;
+          @media screen and (max-width: 1024px) {
+				    top: 30px;
+				    left: 30px;
+      		}
           &:hover {
             background: #008080;
             color: #FFF;
@@ -445,6 +477,9 @@ export default {
           font-size: 50px;
           line-height: 56px;
           padding: 40px 0px 0px 0px;
+          @media screen and (max-width: 639px) {
+          	margin-top: 40px;
+        	}
         }
         span {
           &.scientific-name {
@@ -506,6 +541,12 @@ export default {
           width: 33.33%;
           flex-basis: auto;
           cursor: pointer;
+          @media screen and (min-width: 640px) and (max-width: 768px) {
+          	width: 50%;
+        	}
+        	@media screen and (max-width: 639px) {
+        		width: 100%;
+        	}
           .related-inner {
             padding: 20px;
             .related-info {

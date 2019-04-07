@@ -65,6 +65,11 @@
     top: 0px;
     z-index: 3;
     background: transparent;
+    @media (max-width: 849px) {
+      &::before {
+        content: none !important;
+      }
+    }
     &::before {
       content: '';
       width: 50%;
@@ -80,6 +85,11 @@
         margin-left: 50%;
         position: absolute;
         z-index: -1;
+      }
+      @media (max-width: 849px) {
+        &::after {
+          content: none !important;
+        }
       }
     }
     &.homeNav {
@@ -150,11 +160,17 @@
             display: block;
             margin: 0px auto;
             max-height: 4.75rem;
+            @media (max-width: 639px) {
+              margin: 0.85rem auto 0px auto;
+              max-height: 3rem;
+            }
           }
         }
       }
       .navbar-burger {
-        top: 4px;
+        top: 50%;
+        right: 12px;
+        margin-top: calc(-52px / 2);
         @media (min-width: 1085px) {
           display: none !important;
         }
@@ -251,6 +267,9 @@
               text-align: left;
               font-weight: bold;
               text-shadow: none;
+              &.router-link-exact-active {
+                color: #008080;
+              }
             }
             &:last-child {
               margin-right: 0px;

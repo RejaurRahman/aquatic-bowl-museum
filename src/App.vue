@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="app-container">
     <Header :class="{ 'homeNav': $route.path == '/', 'otherNav': $route.path !== '/' }"></Header>
     <router-view
       @directionSliderNav="v => directionSliderNav = v"
@@ -39,7 +39,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-  #app {
+  .app-container {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -99,6 +99,9 @@
     .position-relative {
       position: relative;
     }
+    .no-margin {
+      margin: 0px;
+    }
   }
 
   .facilities-columns {
@@ -116,8 +119,11 @@
     }
   }
 
-  .hide-scrollbar {
-    overflow-y: hidden;
+  html {
+    overflow-x: hidden;
+    &.hide-scrollbar {
+      overflow-y: hidden;
+    }  
   }
 
   .modal {
@@ -532,6 +538,12 @@
           .animal-bg {
             height: 80vh;
             width: 100%;
+            @media (min-width: 769px) and (max-width: 1024px) {
+              height: 50vh;
+            }
+            @media (max-width: 768px) {
+              height: 40vh;
+            }
             img {
               display: block;
             }
@@ -552,6 +564,9 @@
         @media screen and (min-width: 1088px) and (max-width: 1279px) {
           max-width: 960px;
           width: 960px;
+        }
+        @media screen and (max-width: 768px) {
+          padding-right: 0px;
         }
         .VueCarousel-dot-container {
           margin-top: 0px !important;

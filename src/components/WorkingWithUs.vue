@@ -2,7 +2,7 @@
   <div class="work-with-us-container">
     <div class="work-with-us-heading-copy"> 
       <div class="container">
-        <div class="columns">
+        <div class="columns no-margin">
           <div class="column is-12"> 
             <h2>working with aquatic bowl museum</h2>
             <p>All placements for 2016 have now been fully booked. We apologise in advance for any disappointment this announcement may have caused. In January 2017, we will again start to employ staff and give work experience to full-time and part-time students. If you have the interest and apetite to pursue a career within marine life then why not get hands on experience at Aquatic Bowl Museum.</p>

@@ -2,7 +2,7 @@
   <div class="staff-inner-container">
     <div class="staff-section-heading-copy"> 
       <div class="container">
-        <div class="columns">
+        <div class="columns no-margin">
           <div class="column is-12"> 
             <h2>meet the management team</h2>
             <p>There is a huge ocean of opportunity at Aquatic Bowl Museum. There is every chance we have role which will be perfect for your skillset and experience. We do prefer people who just do not with the job title. We are looking for candidates who strive to reach their full potential and are ambitious in acquiring a personal short term or long term goal and not afraid to swim upstream to achieve the goal.</p>
@@ -142,6 +142,15 @@
     		position: relative;
         text-align: left;
         overflow: visible;
+        @media (max-width: 768px) {
+          overflow-x: hidden;
+          overflow-y: visible;
+        }
+        @media (max-width: 639px) {
+          width: calc(100% - 30px);
+          margin-right: auto;
+          margin-left: auto;
+        }
         h3 {
           text-transform: uppercase;
           font-size: 32px;
@@ -172,6 +181,10 @@
         max-width: inherit;
         min-height: inherit;
         min-width: inherit;
+        @media (max-width: 639px) {
+          top: 5px;
+          right: 5px;
+        }
         &::before {
           content: none;
         }
