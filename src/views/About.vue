@@ -267,6 +267,9 @@
             background-repeat: no-repeat;
             width: 100%;
             height: 100%;
+            @media (min-width: 850px) and (max-width: 1024px) {
+              background-position: left;
+            }
           }   
         }
         .top-left-column {

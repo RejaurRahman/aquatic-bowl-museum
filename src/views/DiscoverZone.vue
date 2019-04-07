@@ -283,8 +283,10 @@
           width: 960px;
         }
         @media screen and (min-width: 850px) and (max-width: 1084px) {
-          padding-right: 20px;
-          padding-left: 20px;
+          padding-right: 30px;
+          padding-left: 30px;
+          width: 100%;
+          max-width: 100%;
         }
         @media (max-width: 849px) {
           width: 100%;
@@ -302,10 +304,12 @@
           position: absolute;
           top: 0px;
           left: 50%;
-          width: 50%;
           height: 100%;
           padding: 0px;
           width: 100%;
+          @media (min-width: 850px) and (max-width: 1024px) {
+            width: 50%;
+          }
           @media (min-width: 850px) {
             display: block;
           }
@@ -414,10 +418,43 @@
     }
     .zone-icon {
       margin-bottom: 30px;
+      @media (max-width: 639px) {
+        margin-top: 30px;
+      }
+    }
+    .left-top-column, .left-bottom-column, .right-top-column, .right-bottom-column {
+      &.aligned-flex {
+        @media (min-width: 640px) and (max-width: 849px) {
+          width: 50%;
+        }
+        @media (max-width: 639px) {
+          width: 100%;
+        }
+      }
+    }
+    .right-column {
+      &.aligned-flex {
+        @media (max-width: 849px) {
+          margin-top: -7px;
+        }
+      }
     }
     .aligned-flex {
       display: inline-flex;
       width: 50%;
+      @media (max-width: 849px) {
+        width: 100%;
+        .left-inner {
+          &.scaled-image {
+            height: 100% !important;
+          }
+        }
+        .right-inner {
+          &.scaled-image {
+            height: 100% !important;
+          }
+        }
+      }
       .left-inner {
         &.scaled-image {
           height: calc(100% - 6px);
@@ -462,11 +499,18 @@
     .flexed-full {
       display: flex;
       width: 100%;
+      @media (max-width: 639px) {
+        display: block;
+      }
     }
     .centered-left-flex, .centered-right-flex {
       display: inline-flex;
       width: 50%;
       position: relative;
+      @media (max-width: 639px) {
+        width: 100%;
+        display: block;
+      }
       &::before {
         content: '';
         position: absolute;
@@ -483,6 +527,9 @@
         justify-content: center;
         width: 100%;
         background: #e4e4e4;
+        @media (max-width: 639px) {
+          margin-top: -7px;
+        }
       }
     }
     .centered-left-flex {
@@ -507,6 +554,9 @@
     }
     .top-section {
       display: flex;
+      @media (max-width: 849px) {
+        display: block;
+      }
       .right-column {
         flex-wrap: wrap;
         .right-inner-bottom {
@@ -517,6 +567,9 @@
     .bottom-section {
       display: flex;
       margin-top: -7px;
+      @media (max-width: 849px) {
+        display: block;
+      }
       .left-column {
         flex-wrap: wrap;
         .left-inner-bottom {
