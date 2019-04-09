@@ -57,7 +57,7 @@
                 </div>
               </div>
             </div>
-            <div class="display-alternate-desktop slide-2-image column is-6">
+            <div class="slide-3-image column is-6">
               <div class="centered-flex">
                 <img src="../../assets/images/home/slide-asset-2.png" class="center-image screen-image">
               </div>

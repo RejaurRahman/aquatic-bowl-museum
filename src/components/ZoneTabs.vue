@@ -66,9 +66,9 @@
 <style scoped lang="scss">
   .tabSection {
     @media (max-width: 849px) {
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 50px;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      margin-bottom: 3.125rem;
     }
   }
 
@@ -82,27 +82,23 @@
     white-space: nowrap;
     width: 100%;
     ul {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
+      justify-content: center;
       border-bottom: 1px solid #38d6d3;
       display: flex;
       flex-grow: 1;
-      margin-top: 30px;
-      padding-left: 0px;
+      margin-top: 1.875rem;
+      padding-left: 0rem;
       @media (max-width: 1280px) {
         display: block;
       }
       li {
         display: block;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
         @media (max-width: 1280px) {
-          margin-right: 0px;
-          margin-left: 0px;
+          margin-right: 0rem;
+          margin-left: 0rem;
         }
         a {
           align-items: center;
@@ -110,14 +106,14 @@
           display: flex;
           justify-content: center;
           margin-bottom: -1px;
-          padding: 0;
+          padding: 0rem;
           vertical-align: top;
           text-transform: uppercase;
-          font-size: 14px;
-          line-height: 30px;
+          font-size: 0.875rem;
+          line-height: 1.875rem;
           cursor: pointer;
           font-weight: 500;
-          width: 115px;
+          width: 7.188rem;
           border-top: 1px solid #38d6d3;
           border-left: 1px solid #38d6d3;
           border-right: 1px solid #38d6d3;
@@ -137,7 +133,7 @@
   }
 
   .content {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     p {
       color: #FFF;
     }

@@ -210,7 +210,7 @@
     .about-top-layer-container {
       background: #008080;
       .top-layer-container {
-        margin: 0px auto;
+        margin: 0rem auto;
         position: relative;
         max-width: 960px;
         width: 960px;
@@ -227,8 +227,8 @@
           width: 960px;
         }
         @media screen and (min-width: 850px) and (max-width: 1084px) {
-          padding-right: 30px;
-          padding-left: 30px;
+          padding-right: 1.875rem;
+          padding-left: 1.875rem;
           width: 100%;
           max-width: 100%;
         }
@@ -246,10 +246,10 @@
         }
         .top-right-column {
           position: absolute;
-          top: 0px;
+          top: 0rem;
           left: 50%;
           height: 100%;
-          padding: 0px; 
+          padding: 0rem; 
           width: 100%;
           @media (min-width: 850px) and (max-width: 1024px) {
             width: 50%;
@@ -276,38 +276,38 @@
           background: #008080;
           padding-bottom: 4.05555556rem;
           padding-top: 4.05555556rem;
-          padding-left: 0px;
-          padding-right: 30px;
+          padding-left: 0rem;
+          padding-right: 1.875rem;
           width: 100%;
           @media (min-width: 850px) {
             width: 50%;
           }
           @media (max-width: 849px) {
             width: 100%;
-            padding-right: 0px;
-            padding-bottom: 0px;
+            padding-right: 0rem;
+            padding-bottom: 0rem;
           }
           h1 {
-            font-size: 32px;
+            font-size: 2rem;
             line-height: 1.2;
             font-weight: 800;
             text-transform: capitalize;
             color: #FFF;
             text-align: left;
             @media (max-width: 849px) {
-              padding-left: 20px;
-              padding-right: 20px;
+              padding-left: 1.25rem;
+              padding-right: 1.25rem;
             }
           }
           p {
-            font-size: 16px;
+            font-size: 1rem;
             color: #FFF;
             text-align: left;
             font-weight: normal;
-            margin-top: 20px;
+            margin-top: 1.25rem;
             @media (max-width: 849px) {
-              padding-left: 20px;
-              padding-right: 20px;
+              padding-left: 1.25rem;
+              padding-right: 1.25rem;
             }
           }
           a {
@@ -317,16 +317,16 @@
             text-transform: uppercase;
             text-align: center;
             width: 300px;
-            margin: 30px auto 0px 0px;
+            margin: 1.875rem auto 0rem 0rem;
             border: 1px solid #FFF;
-            line-height: 45px;
-            height: 46px;
+            line-height: 2.813rem;
+            height: 2.875rem;
             transition: all 500ms ease;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 100;
             @media (max-width: 849px) {
-              margin: 30px auto 50px auto;
-              width: calc(100% - 30px);
+              margin: 1.875rem auto 50px auto;
+              width: calc(100% - 1.875rem);
             }
             &:hover {
               background: transparent;
@@ -339,50 +339,50 @@
     }
     .about-opening-times {
       background: #ECECEC;
-      padding: 50px 0px;
+      padding: 3.125rem 0rem;
       .about-opening-times-container {
         .about-opening-times-columns {
-          margin: 0px;
+          margin: 0rem;
           .about-opening-times-inner {
-            padding-top: 0px;
-            padding-bottom: 0px;
+            padding-top: 0rem;
+            padding-bottom: 0rem;
             h2 {
               text-transform: uppercase;
-              font-size: 32px;
+              font-size: 2rem;
               line-height: 1.2;
               font-weight: 800;
               color: #000;
-              padding-bottom: 20px;
+              padding-bottom: 1.25rem;
             }
             p {
-              font-size: 16px;
+              font-size: 1rem;
               color: #000;
               font-weight: normal;
-              padding-bottom: 20px;
+              padding-bottom: 1.25rem;
               &.schedule {
-                padding-bottom: 0px;
+                padding-bottom: 0rem;
                 span {
                   display: block;
                   text-align: left;
                   border-top: 1px solid #000;
                   border-bottom: 1px solid #000;
-                  padding: 20px 0px;
+                  padding: 1.25rem 0rem;
                   &.days {
                     border: none;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    padding-top: 0px;
-                    padding-bottom: 0px;
+                    padding-left: 1.25rem;
+                    padding-right: 1.25rem;
+                    padding-top: 0rem;
+                    padding-bottom: 0rem;
                     text-transform: uppercase;
-                    font-size: 24px;
-                    line-height: 30px;
+                    font-size: 1.5rem;
+                    line-height: 1.875rem;
                   }
                   &.times {
                     border: none;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    padding-top: 0px;
-                    padding-bottom: 0px;
+                    padding-left: 1.25rem;
+                    padding-right: 1.25rem;
+                    padding-top: 0rem;
+                    padding-bottom: 0rem;
                   }
                 }
               }
@@ -391,9 +391,9 @@
               text-align: left;
               color: #000;
               display: block;
-              padding-left: 20px;
-              padding-right: 20px;
-              padding-top: 5px;
+              padding-left: 1.25rem;
+              padding-right: 1.25rem;
+              padding-top: 0.3125rem;
               font-weight: normal;
             }
           }

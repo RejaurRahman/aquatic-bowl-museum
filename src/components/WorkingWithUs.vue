@@ -57,35 +57,35 @@
   .work-with-us-heading-copy {
     h2 {
       text-transform: uppercase;
-      font-size: 32px;
-      line-height: 38px;
+      font-size: 2rem;
+      line-height: 2.375rem;
       font-weight: 800;
       color: #000;
-      padding-top: 50px;
-      padding-bottom: 20px;
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-top: 3.125rem;
+      padding-bottom: 1.25rem;
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
     }
     p {
-      font-size: 16px;
+      font-size: 1rem;
       color: #000;
       font-weight: normal;
-      margin-bottom: 20px;
-      padding-left: 30px;
-      padding-right: 30px;
+      margin-bottom: 1.25rem;
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
       a {
         color: #008080;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 1rem;
       }
     }
   }
 
   .accordion-container {
     .accordion-columns {
-      margin: 0px;
+      margin: 0rem;
       .accordion-column {
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
         .accordion {
           &:last-child {
             .accordion-header {
@@ -103,7 +103,7 @@
               .arrow {
                 transform: rotate(-135deg);
                 position: relative;
-                top: 20px;
+                top: 1.25rem;
               }
             }
             .accordion-body {
@@ -114,33 +114,33 @@
           }
           &.is-closed {
             .accordion-header {
-              height: 64px;
+              height: 4rem;
             }
             .accordion-body {
-              max-height: 0px;
+              max-height: 0rem;
             }
           }
           .accordion-header {
             cursor: pointer;
-            line-height: 64px;
-            height: 64px;
+            line-height: 4rem;
+            height: 4rem;
             background: #008080;
             color: #FFF;
             font-weight: 600;
             border-top: 1px solid darken(#008080, 20%);
             border-left: 1px solid darken(#008080, 20%);
             border-right: 1px solid darken(#008080, 20%);
-            font-size: 20px;
+            font-size: 1.25rem;
             span {
               display: inline-block;
               @media (max-width: 639px) {
                 &.heading-title {
-                  font-size: 15px;
-                  line-height: 19px;
+                  font-size: 0.9375rem;
+                  line-height: 1.188rem;
                   width: 75%;
                 }
                 &.arrow {
-                  padding: 7px !important;
+                  padding: 0.4375rem !important;
                 }
               }
               &.heading-title {
@@ -148,11 +148,11 @@
                 display: inline-flex;
                 flex-direction: column;
                 justify-content: center;
-                height: 64px;
+                height: 4rem;
                 vertical-align: top;
               }
               &.arrow {
-                padding: 15px;
+                padding: 0.9375rem;
                 transform: rotate(45deg);
                 border-style: solid;
                 border-color: #FFF;
@@ -161,13 +161,13 @@
             }
           }
           .accordion-body {
-            padding: 0px;
-            max-height: 10em;
+            padding: 0rem;
+            max-height: 10rem;
             overflow: hidden;
             transition: all 300ms ease;
             .accordion-content {
-              padding: 20px;
-              font-size: 16px;
+              padding: 1.25rem;
+              font-size: 1rem;
               color: #000;
               font-weight: normal;
             }

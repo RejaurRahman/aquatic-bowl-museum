@@ -259,14 +259,14 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   .body-container {
-    padding-top: 105px;
+    padding-top: 6.563rem;
     .social-section {
-      margin-top: 50px;
+      margin-top: 3.125rem;
     }
     .discover-top-layer-container {
       background: #008080;
       .top-layer-container {
-        margin: 0px auto;
+        margin: 0rem auto;
         position: relative;
         max-width: 960px;
         width: 960px;
@@ -283,8 +283,8 @@
           width: 960px;
         }
         @media screen and (min-width: 850px) and (max-width: 1084px) {
-          padding-right: 30px;
-          padding-left: 30px;
+          padding-right: 1.875rem;
+          padding-left: 1.875rem;
           width: 100%;
           max-width: 100%;
         }
@@ -302,10 +302,10 @@
         }
         .top-right-column {
           position: absolute;
-          top: 0px;
+          top: 0rem;
           left: 50%;
           height: 100%;
-          padding: 0px;
+          padding: 0rem;
           width: 100%;
           @media (min-width: 850px) and (max-width: 1024px) {
             width: 50%;
@@ -329,27 +329,27 @@
           background: #008080;
           padding-bottom: 4.05555556rem;
           padding-top: 4.05555556rem;
-          padding-left: 0px;
-          padding-right: 30px;
+          padding-left: 0rem;
+          padding-right: 1.875rem;
           width: 100%;
           @media (min-width: 850px) {
             width: 50%;
           }
           @media (max-width: 849px) {
             width: 100%;
-            padding-right: 0px;
-            padding-bottom: 0px;
+            padding-right: 0rem;
+            padding-bottom: 0rem;
           }
           h1 {
-            font-size: 32px;
+            font-size: 2rem;
             line-height: 1.2;
             font-weight: 800;
             text-transform: capitalize;
             color: #FFF;
             text-align: left;
             @media (max-width: 849px) {
-              padding-left: 20px;
-              padding-right: 20px;
+              padding-left: 1.25rem;
+              padding-right: 1.25rem;
             }
           }
         }
@@ -362,37 +362,37 @@
       text-align: center;
       text-transform: uppercase;
       color: #444;
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: 1.1;
       font-weight: 500;
-      margin-bottom: 10px;
-      margin-top: 0px;
-      padding: 0px 15px;
+      margin-bottom: 0.625rem;
+      margin-top: 0rem;
+      padding: 0rem 0.9375rem;
     }
     hr {
       position: relative;
       border: none;
-      margin: 15px 0px 50px 0px;
-      padding: 0px;
-      height: 2px;
+      margin: 0.9375rem 0rem 3.125rem 0rem;
+      padding: 0rem;
+      height: 0.125rem;
       background: none;
       &::before {
         content: "";
         position: absolute;
-        top: 0px;
+        top: 0rem;
         left: 25%;
         width: 50%;
-        height: 2px;
+        height: 2rem;
         background: #444;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
       }
     }
     .position-relative {
       position: relative;
       .profile-copy {
         position: absolute;
-        top: 0px;
-        height: calc(100% - 6px);
+        top: 0rem;
+        height: calc(100% - 0.375rem);
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -408,23 +408,23 @@
         }
         p {
           text-align: center;
-          font-size: 18px;
+          font-size: 1.125rem;
           line-height: 1.1;
           font-weight: 300;
-          margin: 0px;
-          padding: 0px 15px;
+          margin: 0rem;
+          padding: 0rem 0.9375rem;
         }
       }
     }
     .zone-icon {
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
       @media (max-width: 639px) {
-        margin-top: 30px;
+        margin-top: 1.875rem;
       }
     }
     .left-top-column, .left-bottom-column, .right-top-column, .right-bottom-column {
       &.aligned-flex {
-        @media (min-width: 640px) and (max-width: 849px) {
+        @media (min-width: 62.5rem) and (max-width: 849px) {
           width: 50%;
         }
         @media (max-width: 639px) {
@@ -435,7 +435,7 @@
     .right-column {
       &.aligned-flex {
         @media (max-width: 849px) {
-          margin-top: -7px;
+          margin-top: -0.4375rem;
         }
       }
     }
@@ -457,12 +457,12 @@
       }
       .left-inner {
         &.scaled-image {
-          height: calc(100% - 6px);
+          height: calc(100% - 0.375rem);
         }
       }
       .right-inner {
         &.scaled-image {
-          height: calc(100% - 7px);
+          height: calc(100% - 0.4375rem);
         }
       }
       .scaled-image {
@@ -480,7 +480,7 @@
         }
         .animal-icon {
           position: absolute;
-          top: 0px;
+          top: 0rem;
           height: 100%;
           width: 100%;
           transform: translateY(50%);
@@ -514,8 +514,8 @@
       &::before {
         content: '';
         position: absolute;
-        width: 0px;
-        height: 0px;
+        width: 0rem;
+        height: 0rem;
         border-style: solid;
         top: 50%;
         transform: translateY(-50%);
@@ -528,28 +528,28 @@
         width: 100%;
         background: #e4e4e4;
         @media (max-width: 639px) {
-          margin-top: -7px;
+          margin-top: -0.4375rem;
         }
       }
     }
     .centered-left-flex {
       &::before {
-        border-width: 10.5px 0px 10.5px 11px;
+        border-width: 0.625rem 0rem 0.625rem 0.6875rem;
         border-color: transparent transparent transparent #e4e4e4;
-        right: -11px;
+        right: -0.6875rem;
       }
       .left-inner {
-        height: calc(100% - 7px);
+        height: calc(100% - 0.4375rem);
       }
     }
     .centered-right-flex {
       &::before {
-        border-width: 10.5px 11px 10.5px 0px;
+        border-width: 0.625rem 0.6875rem 0.625rem 0rem;
         border-color: transparent #e4e4e4 transparent transparent;
-        left: -11px;
+        left: -0.6875rem;
       }
       .right-inner {
-        height: calc(100% - 6px);
+        height: calc(100% - 0.375rem);
       }
     }
     .top-section {
@@ -560,20 +560,20 @@
       .right-column {
         flex-wrap: wrap;
         .right-inner-bottom {
-          margin-top: -6px;
+          margin-top: -0.375rem;
         }
       }
     }
     .bottom-section {
       display: flex;
-      margin-top: -7px;
+      margin-top: -0.4375rem;
       @media (max-width: 849px) {
         display: block;
       }
       .left-column {
         flex-wrap: wrap;
         .left-inner-bottom {
-          margin-top: -7px;
+          margin-top: -0.4375rem;
         }
       }
     }

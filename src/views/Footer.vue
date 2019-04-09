@@ -47,25 +47,25 @@
 	footer {
 		background: #444;
 		position: relative;
-        z-index: 2;
+    z-index: 2;
 		.top-layer {
-			padding: 5.16666667rem 0px 1.38888889rem 0px;
+			padding: 5.16666667rem 0rem 1.38888889rem 0rem;
 		}
 		.bottom-layer {
 			background: #4c4c4c;
 			width: 100% !important;
 			max-width: 100% !important;
-			padding: 1.38888889rem 0px;
+			padding: 1.38888889rem 0rem;
 			p {
 				text-align: center;
-				font-size: 18px;
-				line-height: 21px;
+				font-size: 1.125rem;
+				line-height: 1.313rem;
 				font-weight: 500;
 				color: #FFF;
 			}
 		}
 		.columns {
-			margin: 0px;
+			margin: 0rem;
 			.logo-column {
 				height: 100%;
 				.footer-logo {
@@ -75,7 +75,7 @@
 						margin-right: auto;
 						margin-left: auto;
 						@media (max-width: 768px) {
-							margin-left: 0px;
+							margin-left: 0rem;
 						}
 					}
 				}
@@ -87,18 +87,18 @@
 				li {
 					&:last-child {
 						a {
-							margin-bottom: 0px;
+							margin-bottom: 0rem;
 						}
 					}
 					a {
-						font-size: 18px;
-						line-height: 21px;
+						font-size: 1.125rem;
+						line-height: 1.313rem;
 						font-weight: 500;
 						display: block;
 						transition: all 500ms ease;
 						cursor: pointer;
 						color: #38d6d3;
-						margin-bottom: 5px;
+						margin-bottom: 0.3125rem;
 						&:hover {
 							color: #FFF;
 							transition: all 500ms ease;
@@ -112,25 +112,25 @@
 			}
 			.footer-address {
 				li {
-					font-size: 18px;
-					line-height: 25px;
+					font-size: 1.125rem;
+					line-height: 1.563rem;
 					font-weight: 500;
 					display: block;
-					margin-bottom: 0px;
+					margin-bottom: 0rem;
 					color: #FFF;
 					text-align: left;
 					&.number {
-						margin-top: 30px;
+						margin-top: 1.875rem;
 						background: transparent;
-				    padding: 0px;
+				    padding: 0rem;
 				    height: inherit;
 				    min-width: inherit;
-				    margin-right: 0px;
+				    margin-right: 0rem;
 					}
 					&.email {
 						a {
-							font-size: 18px;
-							line-height: 25px;
+							font-size: 1.125rem;
+							line-height: 1.563rem;
 							font-weight: 500;
 							display: block;
 							transition: all 500ms ease;

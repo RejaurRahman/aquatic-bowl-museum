@@ -4,7 +4,7 @@
       <div class="home-slide-inner">
         <div class="container">
           <div class="columns no-margin no-margin-auto column-reversed">
-            <div class="display-alternate-desktop slide-2-image column is-6">
+            <div class="slide-2-image column is-6">
               <div class="centered-flex">
                 <img src="../../assets/images/home/slide-asset-1.png" class="center-image screen-image">
               </div>

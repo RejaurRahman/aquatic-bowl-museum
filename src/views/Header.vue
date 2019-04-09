@@ -60,9 +60,9 @@
 <style scoped lang="scss">
   .navbar {
     width: 100%;
-    height: 105px;
+    height: 6.563rem;
     position: absolute;
-    top: 0px;
+    top: 0rem;
     z-index: 3;
     background: transparent;
     @media (max-width: 849px) {
@@ -141,7 +141,7 @@
     }
     .container {
       .logo-section {
-        height: 105px;
+        height: 6.563rem;
         min-height: 100%;
         padding: 0.85rem .75rem;
         margin-left: 0px;
@@ -149,16 +149,16 @@
           width: 50%;
         }
         @media (max-width: 1085px) {
-          padding-left: 20px;
-          padding-right: 20px;
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
           background: #38d6d3;
         }
         .navbar-item {
-          padding: 0px;
+          padding: 0rem;
           display: block;
           img {
             display: block;
-            margin: 0px auto;
+            margin: 0rem auto;
             max-height: 4.75rem;
             @media (max-width: 639px) {
               margin: 0.85rem auto 0px auto;
@@ -169,8 +169,8 @@
       }
       .navbar-burger {
         top: 50%;
-        right: 12px;
-        margin-top: calc(-52px / 2);
+        right: 0.75rem;
+        margin-top: calc(-3.25rem / 2);
         @media (min-width: 1085px) {
           display: none !important;
         }
@@ -179,34 +179,34 @@
           outline: none;
         }
         span {
-          height: 8px;
-          border-radius: 8px 8px 8px 8px;
+          height: 0.5rem;
+          border-radius: 0.5rem;
           &:nth-child(1) {
-            top: calc(50% - 22px);
+            top: calc(50% - 1.375rem);
           }
           &:nth-child(2) {
-            top: calc(50% - 3px);
+            top: calc(50% - 0.1875rem);
           }
           &:nth-child(3) {
-            top: calc(50% - -15px);
+            top: calc(50% - -0.9375rem);
           }
         }
         &.is-active {
           span {
             &:nth-child(1) {
-              top: calc(50% - 6px);
+              top: calc(50% - 0.375rem);
             }
             &:nth-child(2) {
-              top: calc(50% - 1px);
+              top: calc(50% - 0.0625rem);
             }
             &:nth-child(3) {
-              top: calc(50% - -4px);
+              top: calc(50% - -0.25rem);
             }
           }
         }
         span {
           width: 100%;
-          left: 0px;
+          left: 0rem;
           background: #FFF;
         }
       }
@@ -219,41 +219,41 @@
           display: flex;
           background: transparent;
           box-shadow: none;
-          padding: 0px;
+          padding: 0rem;
         }
         @media (max-width: 1084px) {
-          padding: 40px 0px;
+          padding: 2.5rem 0rem;
           background: #38d6d3;
         }
         .navbar-start {
           margin-left: auto;
-          margin-right: 0px;
+          margin-right: 0rem;
           @media (min-width: 1085px) and (max-width: 1088px) {
             width: 100%;
             display: flex;
-            margin: 0px 19.225px;
+            margin: 0rem 1.188rem;
             flex-direction: row;
             justify-content: flex-end;
           }
           @media screen and (min-width: 1088px) and (max-width: 1088px) {
-            width: calc(50% - 30px) !important;
+            width: calc(50% - 1.875rem) !important;
           }
           .navbar-item {
-            font-size: 20px;
-            line-height: 20px;
+            font-size: 1.25rem;
+            line-height: 1.25rem;
             font-weight: normal;
             text-transform: uppercase;
-            margin-right: 40px;
-            padding: 0px;
+            margin-right: 2.5rem;
+            padding: 0rem;
             @media (min-width: 1280px) and (max-width: 1471px) {
-              font-size: 18px;
-              line-height: 18px;
-              margin-right: 40px;
+              font-size: 1.125rem;
+              line-height: 1.125rem;
+              margin-right: 2.5rem;
             }
             @media (min-width: 1085px) and (max-width: 1279px) {
-              font-size: 16px;
-              line-height: 16px;
-              margin-right: 25px;
+              font-size: 1rem;
+              line-height: 1rem;
+              margin-right: 1.563rem;
             }
             @media (min-width: 1085px) and (max-width: 1088px) {
               display: flex;
@@ -261,9 +261,9 @@
               justify-content: center;
             }
             @media (max-width: 1084px) {
-              margin-right: 0px;
+              margin-right: 0rem;
               color: #FFF;
-              padding: 20px 40px;
+              padding: 1.25rem 2.5rem;
               text-align: left;
               font-weight: bold;
               text-shadow: none;
@@ -272,7 +272,7 @@
               }
             }
             &:last-child {
-              margin-right: 0px;
+              margin-right: 0rem;
             }
             &.router-link-exact-active {
               background: transparent;

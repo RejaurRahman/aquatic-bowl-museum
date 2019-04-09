@@ -79,57 +79,57 @@
   .staff-section-heading-copy {
     h2 {
       text-transform: uppercase;
-      font-size: 32px;
-      line-height: 38px;
+      font-size: 2rem;
+      line-height: 2.375rem;
       font-weight: 800;
       color: #000;
-      padding-top: 50px;
-      padding-bottom: 20px;
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-top: 3.125rem;
+      padding-bottom: 1.25rem;
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
     }
     p {
-      font-size: 16px;
+      font-size: 1rem;
       color: #000;
       font-weight: normal;
-      margin-bottom: 20px;
-      padding-left: 30px;
-      padding-right: 30px;
+      margin-bottom: 1.25rem;
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
     }
   }
 
   .staffSection {
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
     .staff-block {
       display: inline-flex;
       width: 25%;
       @media (min-width: 768px) and (max-width: 1024px) {
         width: 33.33%;
       }
-      @media (min-width: 640px) and (max-width: 767px) {
+      @media (min-width: 62.5rem) and (max-width: 767px) {
         width: 50%;
       }
       @media (max-width: 639px) {
         width: 100%;
       }
       img {
-        padding-top: 50px;
+        padding-top: 3.125rem;
       }
       h4 {
         text-transform: uppercase;
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 1.375rem;
+        line-height: 1.875rem;
         font-weight: 800;
         color: #000;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
       }
       p {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
         color: #000;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
       }
     }
     .modal {
@@ -138,7 +138,7 @@
       }
     	.modal-content {
     		background: #FFF;
-    		padding: 20px;
+    		padding: 1.25rem;
     		position: relative;
         text-align: left;
         overflow: visible;
@@ -147,36 +147,36 @@
           overflow-y: visible;
         }
         @media (max-width: 639px) {
-          width: calc(100% - 30px);
+          width: calc(100% - 1.875rem);
           margin-right: auto;
           margin-left: auto;
         }
         h3 {
           text-transform: uppercase;
-          font-size: 32px;
-          line-height: 38px;
+          font-size: 2rem;
+          line-height: 2.375rem;
           font-weight: 800;
           color: #000;
         }
         h4 {
-          font-size: 24px;
-          line-height: 30px;          
+          font-size: 1.5rem;
+          line-height: 1.875rem;          
           font-weight: 500;
           color: #000;
-          margin-bottom: 16px;
+          margin-bottom: 1rem;
         }
     	}
     	.modal-close {
     	  position: absolute;
-    		top: -14px;
-    		right: -14px;
+    		top: -0.875rem;
+    		right: -0.875rem;
     		background: url("../assets/images/close-button.png");
         background-repeat: no-repeat;
         background-size: contain;
-        width: 30px;
-        height: 29px;
+        width: 1.875rem;
+        height: 1.813rem;
     		color: transparent;
-        padding: 0px;
+        padding: 0rem;
         max-height: inherit;
         max-width: inherit;
         min-height: inherit;

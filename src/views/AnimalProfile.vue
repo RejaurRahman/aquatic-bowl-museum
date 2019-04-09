@@ -323,46 +323,46 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .body-container {
-  padding-top: 105px;
+  padding-top: 6.563rem;
   .animal-profile-container {
     .box-container {
       background: url("../assets/images/zones/pattern.png");
       background-repeat: no-repeat;
       background-size: cover;
-      margin-top: -24px;
+      margin-top: -1.5rem;
       position: relative;
       @media screen and (max-width: 1024px) {
-      	margin-top: -20px;
+      	margin-top: -1.25rem;
       	background: none;
     	}
       .did-you-know-box {
-        padding: 0px 50px;
+        padding: 0rem 3.125rem;
         @media screen and (max-width: 768px) {
-        	margin-top: 40px;
-        	padding: 0px;
+        	margin-top: 2.5rem;
+        	padding: 0rem;
       	}
         .did-you-know-box-inner {
           background: #008080;
-          padding: 30px 40px;
+          padding: 1.875rem 2.5rem;
           h5 {
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 1rem;
+            line-height: 1.25rem;
             letter-spacing: 2px;
             font-weight: 600;
             color: #FFF;
             text-transform: uppercase;
-            margin-bottom: 15px;
+            margin-bottom: 0.9375rem;
           }
           hr {
-            width: 35px;
+            width: 2.188rem;
             margin-left: auto;
             margin-right: auto;
-            height: 4px;
+            height: 0.25rem;
             background: #38d6d3;
           }
           h4 {
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 1.5rem;
+            line-height: 1.875rem;
             font-weight: bold;
             color: #FFF;
           }
@@ -373,28 +373,28 @@ export default {
         background: url("../assets/images/back-to-top.png");
         background-repeat: no-repeat;
         background-size: cover;
-        width: 48px;
-        height: 24px;
-        margin-top: -24px;
+        width: 3rem;
+        height: 1.5rem;
+        margin-top: -1.5rem;
         cursor: pointer;
         top: 50%;
         z-index: 1;
         appearance: none;
         border: none;
-        padding: 0px;
+        padding: 0rem;
         &:focus {
           outline: none;
         }
       }
       .previous-profile {
-        left: 15px;
+        left: 0.9375rem;
         transform: rotate(-90deg);
         @media (max-width: 639px) {
-        	left: 5px;
+        	left: 0.3125rem;
       	}
       }
       .next-profile {
-        right: 15px;
+        right: 0.9375rem;
         transform: rotate(90deg);
         @media (max-width: 639px) {
         	right: 5px;
@@ -402,8 +402,8 @@ export default {
       }
       .wave-box {
         width: 100%;
-        height: 84px;
-        top: -84px;
+        height: 5.25rem;
+        top: -5.25rem;
         display: block;
         position: absolute;
         z-index: 2;
@@ -411,28 +411,28 @@ export default {
         background-size: cover;
         background-repeat: no-repeat;
         @media screen and (max-width: 1024px) {
-        	width: calc(100% - 60px);
-        	left: 30px;
+        	width: calc(100% - 3.75rem);
+        	left: 1.875rem;
       	}
       	@media screen and (max-width: 639px) {
-      		height: 60px;
-      		top: -60px;
+      		height: 3.75rem;
+      		top: -3.75rem;
       	}
       }
       .animal-box {
         background: #FFF;
-        padding: 0px 30px;
+        padding: 0rem 1.875rem;
         @media screen and (max-width: 1024px) {
-        	padding: 30px 30px 0px 30px;
+        	padding: 1.875rem 1.875rem 0rem 1.875rem;
       	}
         .inner-box-shadow {
           background: url("../assets/images/zones/wave2.png");
           background-repeat: no-repeat;
           background-size: cover;
-          width: 68px;
-          height: 232px;
-          top: 0px;
-          left: -55px;
+          width: 4.25rem;
+          height: 22rem;
+          top: 0rem;
+          left: -3.438rem;
           display: block;
           position: absolute;
           @media screen and (max-width: 1024px) {
@@ -448,19 +448,19 @@ export default {
           text-transform: uppercase;
           font-weight: 300;
           position: absolute;
-          top: 0px;
-          left: 40px;
+          top: 0rem;
+          left: 2.5rem;
           cursor: pointer;
-          width: 175px;
-          height: 40px;
-          font-size: 18px;
-          padding-left: 15px;
-          padding-right: 15px;
+          width: 10.94rem;
+          height: 2.5rem;
+          font-size: 1.125rem;
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem;
           display: block;
           transition: all 500ms ease;
           @media screen and (max-width: 1024px) {
-				    top: 30px;
-				    left: 30px;
+				    top: 1.875rem;
+				    left: 1.875rem;
       		}
           &:hover {
             background: #008080;
@@ -474,11 +474,11 @@ export default {
         h2 {
           text-transform: uppercase;
           font-weight: 300;
-          font-size: 50px;
-          line-height: 56px;
-          padding: 40px 0px 0px 0px;
+          font-size: 3.125rem;
+          line-height: 3.5rem;
+          padding: 2.5rem 0rem 0rem 0rem;
           @media screen and (max-width: 639px) {
-          	margin-top: 40px;
+          	margin-top: 2.5rem;
         	}
         }
         span {
@@ -486,41 +486,41 @@ export default {
             display: block;
             font-style: italic;
             text-transform: capitalize;
-            font-size: 30px;
-            line-height: 36px;
+            font-size: 1.875rem;
+            line-height: 2.25rem;
             font-weight: 300;
             color: #2c3e50;
-            margin-bottom: 5px;
+            margin-bottom: 0.3125rem;
           }
         }
         h3 {
           text-transform: uppercase;
           font-weight: 300;
-          font-size: 30px;
-          line-height: 36px;
+          font-size: 1.875rem;
+          line-height: 2.25rem;
           color: #38d6d3;
-          padding-bottom: 40px;
+          padding-bottom: 2.5rem;
         }
         p {
-          font-size: 18px;
+          font-size: 1.125rem;
           font-weight: 300;
           span {
             display: block;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
             &.highlighted-text {
               color: #38d6d3;
-              font-size: 20px;
+              font-size: 1.25rem;
             }
           }
         }
         .image-vector-container {
-          margin: 0px;
-          padding-top: 30px;
+          margin: 0rem;
+          padding-top: 1.875rem;
           align-items: center;
           justify-content: center;
-          padding-bottom: 60px;
+          padding-bottom: 3.75rem;
           .image-vector-inner {
-            padding: 0px;
+            padding: 0rem;
           }
         }
       }
@@ -528,11 +528,11 @@ export default {
         background: url("../assets/images/zones/divider.png");
         background-repeat-x: repeat;
         background-size: contain;
-        height: 13px;
+        height: 0.8125rem;
         width: 100%;
       }
       .related-section {
-        padding: 45px 0px 60px 0px;
+        padding: 2.813rem 0rem 3.75rem 0rem;
         background: #FFF;
         display: flex;
         flex-flow: row wrap;
@@ -541,43 +541,43 @@ export default {
           width: 33.33%;
           flex-basis: auto;
           cursor: pointer;
-          @media screen and (min-width: 640px) and (max-width: 768px) {
+          @media screen and (min-width: 62.5rem) and (max-width: 768px) {
           	width: 50%;
         	}
         	@media screen and (max-width: 639px) {
         		width: 100%;
         	}
           .related-inner {
-            padding: 20px;
+            padding: 1.25rem;
             .related-info {
               border-left: 1px solid #008080;
               border-right: 1px solid #008080;
               border-bottom: 1px solid #008080;
-              margin-top: -7px;
-              padding: 20px;
+              margin-top: -0.4375rem;
+              padding: 1.25rem;
               text-align: left;
               background: #008080;
               h2 {
                 text-transform: uppercase;
-                font-size: 22px;
-                line-height: 26px;
+                font-size: 1.375rem;
+                line-height: 1.625rem;
                 font-weight: bold;
-                margin-bottom: 15px;
+                margin-bottom: 0.9375rem;
                 color: #38d6d3;
               }
               p {
                 text-transform: capitalize;
-                font-size: 17px;
-                line-height: 23px;
+                font-size: 1.063rem;
+                line-height: 1.438rem;
                 font-weight: 400;
-                margin-bottom: 15px;
+                margin-bottom: 0.9375rem;
                 color: #38d6d3;
               }
               span {
                 text-transform: uppercase;
                 display: block;
-                font-size: 17px;
-                line-height: 23px;
+                font-size: 1.063rem;
+                line-height: 1.438rem;
                 font-weight: bold;
                 color: #FFF;
               }
@@ -590,26 +590,26 @@ export default {
       }
       .fish-info-section {
         background: #008080;
-        padding: 40px 0px;
+        padding: 2.5rem 0rem;
         position: relative;
         z-index: 2;
         .fish-info-column {
-          margin: 0px;
+          margin: 0rem;
           text-align: left;
           h4 {
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 800;
             color: #000;
           }
           p {
             color: #FFF;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 300;
           }
         }
         .social-section {
-          margin: 40px 12px 0px 12px;
+          margin: 2.5rem 12px 0px 12px;
           border-top: 1px solid #38d6d3;
           p {
             color: #000;

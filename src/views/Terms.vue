@@ -237,33 +237,32 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   .body-container {
-    padding-top: 105px;
+    padding-top: 6.563rem;
     .page-container {
     	background: #e4e4e4;
-    	padding: 50px 0px;
+    	padding: 3.125rem 0rem;
     	text-align: left;
     	h1 {
-    		font-size: 32px;
+    		font-size: 2rem;
     		line-height: 1.2;
     		text-transform: uppercase;
     		font-weight: bold;
-    		margin: 0px;
-    		letter-spacing: 0.06em;
+    		margin: 0rem;
     		color: #000;
     	}
     	h3 {
     		margin-top: 25px;
     		text-transform: uppercase;
-    		font-size: 20px;
+    		font-size: 1.25rem;
     		line-height: 1.2;
     		font-weight: 600;
     		color: #000;
     	}
     	p {
-    		margin-top: 17px;
+    		margin-top: 1.063rem;
     		color: #000;
-    		font-size: 18px;
-    		line-height: 24px;
+    		font-size: 1.125rem;
+    		line-height: 1.5rem;
     		font-weight: normal;
     		span {
     			font-weight: 500;
@@ -277,13 +276,13 @@
     	ul {
     		display: block;
     		list-style-type: disc;
-    		padding-left: 18px;
-    		margin-top: 17px;
+    		padding-left: 1.125rem;
+    		margin-top: 1.063rem;
     		li {
     			display: list-item;
     			color: #000;
-    			font-size: 18px;
-    			line-height: 24px;
+    			font-size: 1.125rem;
+    			line-height: 1.5rem;
     			font-weight: normal;    			
     		}
     	}

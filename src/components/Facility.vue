@@ -37,13 +37,13 @@
 <style scoped lang="scss">
   .facilitySection {
     .facilities-columns {
-      margin-bottom: 0px;
+      margin-bottom: 0rem;
       .facilities-inner {
-        padding: 0px 0px 20px 0px;
+        padding: 0rem 0rem 1.25rem 0rem;
         width: 33.33%;
         display: inline-block;
         vertical-align: top;
-        @media (min-width: 640px) and (max-width: 1199px) {
+        @media (min-width: 62.5rem) and (max-width: 1199px) {
           width: 50%;
         }
         @media (max-width: 639px) {
@@ -52,21 +52,21 @@
         .facility-box {
           h4 {
             text-transform: uppercase;
-            font-size: 32px;
-            line-height: 38px;
+            font-size: 2rem;
+            line-height: 2.375rem;
             font-weight: 800;
             color: #000;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            padding-left: 1.875rem;
+            padding-right: 1.875rem;
           }
           p {
-            font-size: 18px;
-            line-height: 24px;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
             color: #000;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: 1.875rem;
+            padding-right: 1.875rem;
           }
         }
       }
