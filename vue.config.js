@@ -1,8 +1,17 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
-    baseUrl: process.env.NODE_ENV === 'production'
-        ? 'http://rejaurrahmanprojects.co.uk/Aquatic-Bowl-Museum/'
-        : '/'
-};
+    baseUrl: '/',
+    pages: {
+        index: {
+            entry: 'src/main.js', //entry for the public page
+            template: 'public/index.html', // source template
+            filename: 'index.html' // output as dist/*
+        },
+    },
+    devServer: {
+        historyApiFallback: {
+            rewrites: [
+                { from: /\/index/, to: '/index.html' },
+            ]
+        }
+    }
+}
